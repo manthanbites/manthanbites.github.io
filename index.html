@@ -1,5 +1,18 @@
 <!DOCTYPE html>
 <html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="1jfBqU_3vrc-yIXavmCrm3vu3ddvS_unx3brnQonddo" />
+  <meta name="description" content="Manthan Bites: Bina crash diet ke mindful eating, slow chewing, gut health aur sustainable weight management guides. Free guided weekly program by Rajni Pant (Haridwar)." />
+  <link rel="canonical" href="https://manthanbites.github.io/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://manthanbites.github.io/" />
+  <meta property="og:title" content="Manthan Bites | Sustainable Weight Management &amp; Mindful Eating" />
+  <meta property="og:description" content="Bina crash diet ke mindful eating, slow chewing, gut health aur sustainable weight management guides. Free guided weekly program by Rajni Pant (Haridwar)." />
+  <meta property="og:locale" content="hi_IN" />
+  <title>Manthan Bites | Sustainable Weight Management &amp; Mindful Eating</title>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -38,6 +51,7 @@
     ]
   }
   </script>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -78,19 +92,7 @@
     ]
   }
   </script>
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://manthanbites.github.io/" />
-  <meta property="og:title" content="Manthan Bites | Sustainable Weight Management &amp; Mindful Eating" />
-  <meta property="og:description" content="Bina crash diet ke mindful eating, slow chewing, gut health aur sustainable weight management guides. Free guided weekly program by Rajni Pant (Haridwar)." />
-  <meta property="og:locale" content="hi_IN" />
-</head>
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="google-site-verification" content="1jfBqU_3vrc-yIXavmCrm3vu3ddvS_unx3brnQonddo" />
-  <meta name="description" content="Manthan Bites: Bina crash diet ke mindful eating, slow chewing, gut health aur sustainable weight management guides. Free guided weekly program by Rajni Pant (Haridwar)." />
-  <link rel="canonical" href="https://manthanbites.github.io/" />
-  <title>Manthan Bites | Sustainable Weight Management &amp; Mindful Eating</title>
+
   <style>
     :root {
       --bg: #faf8f5;
@@ -306,6 +308,8 @@
         <a href="#articles">Articles</a>
         <a href="#program">Free Program</a>
         <a href="#about-tips">About &amp; Tips</a>
+        <a href="#faq">FAQ</a>
+        <a href="#free-tools">Free Tools</a>
       </nav>
     </div>
   </header>
@@ -372,7 +376,8 @@
     </section>
 
     <section id="program" class="section">
-      <div class="program-box">
+      <div class="container">
+        <div class="program-box">
           <h2>Manthan Bites Free Guided Weekly Weight Management Program</h2>
           <p style="margin-bottom: 18px;">
             Hamara community program un logon ke liye hai jo bina crash dieting ke, guided weekly steps ke saath mindful eating aur healthy weight habits banana chahte hain.
@@ -402,6 +407,7 @@
         </div>
       </div>
     </section>
+
     <section id="about-tips" class="section">
       <div class="container">
         <h2 class="section-title">About Program, Details &amp; Mindful Eating Tips</h2>
@@ -446,6 +452,7 @@
         </div>
       </div>
     </section>
+
     <section id="faq" class="section">
       <div class="container">
         <h2 class="section-title">Aksar Poochhe Jaane Waale Sawaal (FAQ)</h2>
@@ -484,6 +491,97 @@
         </div>
       </div>
     </section>
+
+    <section id="free-tools" class="section">
+      <div class="container">
+        <h2 class="section-title">Try Our Free Tools</h2>
+        <p class="section-sub">
+          Apni rozmarra ki aadat ko samajhne ke liye in 3 interactive tools ka istemal karein. (Yeh sirf self-awareness aur educational guidance ke liye hain.)
+        </p>
+
+        <div class="grid">
+          <!-- Tool 1: BMI Calculator -->
+          <div class="card">
+            <h3>1. BMI Calculator (Interactive)</h3>
+            <p style="margin-bottom: 14px;">Apni height aur weight ke hisab se basic BMI index dekhein.</p>
+
+            <label for="bmi-height" style="display:block; font-size:0.88rem; font-weight:600; margin-bottom:4px;">Height (cm mein)</label>
+            <input id="bmi-height" type="number" min="80" max="250" placeholder="Jaise 170" style="width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; font-size:0.95rem;" />
+
+            <label for="bmi-weight" style="display:block; font-size:0.88rem; font-weight:600; margin-bottom:4px;">Weight (kg mein)</label>
+            <input id="bmi-weight" type="number" min="20" max="250" placeholder="Jaise 68" style="width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; margin-bottom:12px; font-size:0.95rem;" />
+
+            <button type="button" class="btn" onclick="calculateBMI()" style="border:none; cursor:pointer; width:100%; padding:10px 16px;">Calculate BMI</button>
+            <div id="bmi-result" style="margin-top:12px; font-size:0.92rem; color:var(--text); background:var(--bg); padding:10px 12px; border-radius:8px; border:1px solid var(--border);">
+              Result yahan dikhega.
+            </div>
+          </div>
+
+          <!-- Tool 2: Water Intake Calculator -->
+          <div class="card">
+            <h3>2. Water Intake Calculator (Interactive)</h3>
+            <p style="margin-bottom: 14px;">Weight aur activity ke hisab se din bhar ka ek general water target jaanein.</p>
+
+            <label for="water-weight" style="display:block; font-size:0.88rem; font-weight:600; margin-bottom:4px;">Weight (kg mein)</label>
+            <input id="water-weight" type="number" min="20" max="250" placeholder="Jaise 65" style="width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; font-size:0.95rem;" />
+
+            <label for="water-activity" style="display:block; font-size:0.88rem; font-weight:600; margin-bottom:4px;">Daily Activity / Walk</label>
+            <select id="water-activity" style="width:100%; padding:9px 11px; border:1px solid var(--border); border-radius:8px; margin-bottom:12px; font-size:0.95rem; background:#fff;">
+              <option value="0">Normal / Light routine</option>
+              <option value="0.4">Daily walk / Moderate activity (+0.4L)</option>
+              <option value="0.7">Active / Garmi ya zyada pasina (+0.7L)</option>
+            </select>
+
+            <button type="button" class="btn" onclick="calculateWater()" style="border:none; cursor:pointer; width:100%; padding:10px 16px;">Calculate Water</button>
+            <div id="water-result" style="margin-top:12px; font-size:0.92rem; color:var(--text); background:var(--bg); padding:10px 12px; border-radius:8px; border:1px solid var(--border);">
+              Result yahan dikhega.
+            </div>
+          </div>
+
+          <!-- Tool 3: Mindful Eating Quiz -->
+          <div class="card">
+            <h3>3. Mindful Eating Quiz (Interactive)</h3>
+            <p style="margin-bottom: 14px;">Apni khane ki aadat ko 3 chhote sawaalon se check karein.</p>
+
+            <label for="q1-chew" style="display:block; font-size:0.86rem; font-weight:600; margin-bottom:4px;">1. Khana kitni der/dhyan se chabaate hain?</label>
+            <select id="q1-chew" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; font-size:0.9rem; background:#fff;">
+              <option value="1">Jaldbazi mein / kam chaba kar</option>
+              <option value="2">Kabhi dheere, kabhi tezi se</option>
+              <option value="3">Har bite ko aaram se chaba kar</option>
+            </select>
+
+            <label for="q2-screen" style="display:block; font-size:0.86rem; font-weight:600; margin-bottom:4px;">2. Khate waqt phone ya TV ka kya haal hota hai?</label>
+            <select id="q2-screen" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:8px; margin-bottom:10px; font-size:0.9rem; background:#fff;">
+              <option value="1">Aksar phone/screen dekhte hue khate hain</option>
+              <option value="2">Kabhi-kabhi screen saath hoti hai</option>
+              <option value="3">Zyaadatar screen-free aur dhyan se khate hain</option>
+            </select>
+
+            <label for="q3-pace" style="display:block; font-size:0.86rem; font-weight:600; margin-bottom:4px;">3. Pet bharne ke sanket ko kab pehchante hain?</label>
+            <select id="q3-pace" style="width:100%; padding:8px 10px; border:1px solid var(--border); border-radius:8px; margin-bottom:12px; font-size:0.9rem; background:#fff;">
+              <option value="1">Jab bilkul heavy ya overfull ho jaye</option>
+              <option value="2">Aadha-adhoora dhyaan rehta hai</option>
+              <option value="3">Halke aur comfortable fullness par rukte hain</option>
+            </select>
+
+            <button type="button" class="btn" onclick="scoreMindfulQuiz()" style="border:none; cursor:pointer; width:100%; padding:10px 16px;">Check My Score</button>
+            <div id="quiz-result" style="margin-top:12px; font-size:0.92rem; color:var(--text); background:var(--bg); padding:10px 12px; border-radius:8px; border:1px solid var(--border);">
+              Score aur next tip yahan dikhega.
+            </div>
+          </div>
+        </div>
+
+        <div class="program-box" style="margin-top: 20px;">
+          <h3>Tools Ke Result Ke Baad Next Step</h3>
+          <p style="margin-bottom: 16px;">
+            Apne results ke hisab se ek simple weekly habit routine shuru karne ke liye <strong>Rajni Pant</strong> (Haridwar) se <strong>+91 9286688044</strong> par WhatsApp ke zariye jud sakte hain.
+          </p>
+          <a class="btn" href="https://wa.me/919286688044?text=Namaste%20Rajni%20ji%2C%20maine%20Manthan%20Bites%20ke%20Free%20Tools%20try%20kiye%20hain%20aur%20Free%20Weekly%20Weight%20Management%20Program%20ki%20jaankari%20chahti%20hoon." target="_blank" rel="noopener noreferrer">
+            WhatsApp Par Guidance Lein
+          </a>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer>
@@ -494,10 +592,65 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    function calculateBMI() {
+      const hCm = parseFloat(document.getElementById("bmi-height").value);
+      const wKg = parseFloat(document.getElementById("bmi-weight").value);
+      const out = document.getElementById("bmi-result");
+
+      if (!hCm || !wKg || hCm <= 0 || wKg <= 0) {
+        out.innerHTML = "Kripya sahi <strong>height (cm)</strong> aur <strong>weight (kg)</strong> darj karein.";
+        return;
+      }
+
+      const hM = hCm / 100;
+      const bmi = (wKg / (hM * hM)).toFixed(1);
+      let category = "Normal range";
+      if (bmi < 18.5) category = "Underweight range";
+      else if (bmi >= 25 && bmi < 30) category = "Overweight range";
+      else if (bmi >= 30) category = "Higher BMI range";
+
+      out.innerHTML = "<strong>BMI: " + bmi + "</strong> (" + category + ")<br/>Tip: Sirf number ke bajay rozmarra ki <a href='dheere-chabakar-khane-ki-aadat.html' style='color:var(--primary);font-weight:600;'>slow chewing</a> aur habit routine par dhyan dein.";
+    }
+
+    function calculateWater() {
+      const wKg = parseFloat(document.getElementById("water-weight").value);
+      const extraL = parseFloat(document.getElementById("water-activity").value) || 0;
+      const out = document.getElementById("water-result");
+
+      if (!wKg || wKg <= 0) {
+        out.innerHTML = "Kripya apna sahi <strong>weight (kg)</strong> darj karein.";
+        return;
+      }
+
+      const baseL = (wKg * 0.033) + extraL;
+      const minL = Math.max(1.5, (baseL - 0.25)).toFixed(1);
+      const maxL = (baseL + 0.25).toFixed(1);
+
+      out.innerHTML = "<strong>Approx. Daily Target: " + minL + "L – " + maxL + "L</strong><br/>Tip: Ek saath zyada peene ke bajay <a href='paani-peene-ka-sahi-tarika.html' style='color:var(--primary);font-weight:600;'>ghoont-ghoont aur sahi samay</a> par paani piyein.";
+    }
+
+    function scoreMindfulQuiz() {
+      const s1 = parseInt(document.getElementById("q1-chew").value, 10) || 1;
+      const s2 = parseInt(document.getElementById("q2-screen").value, 10) || 1;
+      const s3 = parseInt(document.getElementById("q3-pace").value, 10) || 1;
+      const total = s1 + s2 + s3;
+      const out = document.getElementById("quiz-result");
+
+      let level = "Shuruati Aadat Stage";
+      let tip = "Aaj se har meal mein pehle 3 bites bilkul dheere chabaakar shuruat karein.";
+
+      if (total >= 8) {
+        level = "Strong Mindful Eating Base";
+        tip = "Aapki awareness achhi hai—ise <a href='bina-stress-ke-weight-balance.html' style='color:var(--primary);font-weight:600;'>bina stress routine</a> ke saath aise hi banaye rakhein.";
+      } else if (total >= 5) {
+        level = "Growing Awareness Stage";
+        tip = "Khate waqt phone door rakhne aur <a href='dheere-chabakar-khane-ki-aadat.html' style='color:var(--primary);font-weight:600;'>slow chewing</a> par thoda aur focus karein.";
+      }
+
+      out.innerHTML = "<strong>Score: " + total + "/9 (" + level + ")</strong><br/>" + tip;
+    }
+  </script>
 </body>
 </html>
-
-
-
-
-
