@@ -4,7 +4,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="google-site-verification" content="1jfBqU_3vrc-yIXavmCrm3vu3ddvS_unx3brnQonddo" />
-  <title>Manthan Bites | Sustainable Weight Management & Mindful Eating</title>
+  <meta name="description" content="Manthan Bites: Bina crash diet ke mindful eating, slow chewing, gut health aur sustainable weight management guides. Free guided weekly program by Rajni Pant (Haridwar)." />
+  <link rel="canonical" href="https://manthanbites.github.io/" />
+  <title>Manthan Bites | Sustainable Weight Management &amp; Mindful Eating</title>
   <style>
     :root {
       --bg: #faf8f5;
@@ -118,6 +120,11 @@
       border-radius: 10px;
       text-decoration: none;
       font-weight: 600;
+      transition: opacity 0.2s ease;
+    }
+
+    .btn:hover {
+      opacity: 0.92;
     }
 
     .btn-outline {
@@ -148,11 +155,22 @@
       gap: 20px;
     }
 
+    .card-link {
+      text-decoration: none;
+      color: inherit;
+      display: block;
+    }
+
     .card {
       background: var(--surface);
       border: 1px solid var(--border);
       border-radius: 14px;
       padding: 24px;
+      height: 100%;
+    }
+
+    .card-link:hover .card {
+      border-color: var(--primary);
     }
 
     .card h3 {
@@ -198,7 +216,7 @@
 <body>
   <header>
     <div class="container nav">
-      <a class="brand" href="#">Manthan Bites</a>
+      <a class="brand" href="index.html">Manthan Bites</a>
       <nav class="nav-links">
         <a href="#pillars">Pillars</a>
         <a href="#articles">Articles</a>
@@ -226,11 +244,11 @@
         <p class="section-sub">Kisi temporary diet plan ke bajay lambi umar chalne wali aadat par focus.</p>
         <div class="grid">
           <div class="card">
-            <h3>1. Mindful Eating & Slow Chewing</h3>
+            <h3>1. Mindful Eating &amp; Slow Chewing</h3>
             <p>Har niwale ko dhyan se chabaana, phone se door rehkar khana, aur bhukh-pet bharne ke sanket ko samajhna.</p>
           </div>
           <div class="card">
-            <h3>2. Gut Health & Digestion</h3>
+            <h3>2. Gut Health &amp; Digestion</h3>
             <p>Acha digestion aur balanced gut microbiome behtar energy, kam bloating aur healthy metabolism ki neev hai.</p>
           </div>
           <div class="card">
@@ -243,22 +261,22 @@
 
     <section id="articles" class="section">
       <div class="container">
-        <h2 class="section-title">Shuruati Guides & Notes</h2>
-        <p class="section-sub">Aane wale samay mein yahan naye articles aur practical weight management tips judte rahenge.</p>
+        <h2 class="section-title">Shuruati Guides &amp; Notes</h2>
+        <p class="section-sub">Kisi bhi guide par click karke poora article padhein.</p>
         <div class="grid">
-          <a href="dheere-chabakar-khane-ki-aadat.html" style="text-decoration:none; color:inherit;">
+          <a class="card-link" href="dheere-chabakar-khane-ki-aadat.html">
             <div class="card">
               <h3>Dheere Chabaakar Khane Ki Aadat</h3>
               <p>Jaldi khane se overeating kyun hoti hai aur har bite ko dhyan se chabaane se pachan aur energy par kya asar padta hai. →</p>
             </div>
           </a>
-          <a href="paani-peene-ka-sahi-tarika.html" style="text-decoration:none; color:inherit;">
+          <a class="card-link" href="paani-peene-ka-sahi-tarika.html">
             <div class="card">
               <h3>Paani Peene Ka Sahi Tarika</h3>
               <p>Din bhar mein dhyan se paani peene aur khane ke aas-paas ki aadat ko samajhne ki buniyadi baatein. →</p>
             </div>
           </a>
-          <a href="bina-stress-ke-weight-balance.html" style="text-decoration:none; color:inherit;">
+          <a class="card-link" href="bina-stress-ke-weight-balance.html">
             <div class="card">
               <h3>Bina Stress Ke Weight Balance</h3>
               <p>Kya weight management sirf calories ginne ka naam hai ya aadat aur man ki sthiti ka bhi hissa hai? →</p>
@@ -293,14 +311,9 @@
     <div class="container">
       <div>© 2026 Manthan Bites. All rights reserved.</div>
       <div class="disclaimer">
-        Educational & informational purpose only. This content is not medical advice; consult a qualified healthcare professional for personal medical concerns.
+        Educational &amp; informational purpose only. This content is not medical advice; consult a qualified healthcare professional for personal medical concerns.
       </div>
     </div>
   </footer>
 </body>
-
 </html>
-
-
-
-
