@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Manthan Bites | Sustainable Weight Management & Mindful Eating</title>
+  <style>
+    :root {
+      --bg: #faf8f5;
+      --surface: #ffffff;
+      --primary: #1f5c43;
+      --primary-light: #e7f2ed;
+      --text: #1e2421;
+      --muted: #5c6660;
+      --border: #e3e7e4;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+    }
+
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    header {
+      background: var(--surface);
+      border-bottom: 1px solid var(--border);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 0;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    .brand {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--primary);
+      text-decoration: none;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .nav-links a {
+      text-decoration: none;
+      color: var(--text);
+      font-weight: 500;
+      font-size: 0.95rem;
+    }
+
+    .nav-links a:hover {
+      color: var(--primary);
+    }
+
+    .hero {
+      padding: 64px 0 48px;
+      text-align: center;
+    }
+
+    .badge {
+      display: inline-block;
+      background: var(--primary-light);
+      color: var(--primary);
+      padding: 6px 14px;
+      border-radius: 999px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.2;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+
+    .hero h1 span {
+      color: var(--primary);
+    }
+
+    .hero p {
+      max-width: 680px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.08rem;
+    }
+
+    .btn {
+      display: inline-block;
+      background: var(--primary);
+      color: #fff;
+      padding: 13px 26px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .btn-outline {
+      background: transparent;
+      color: var(--primary);
+      border: 1.5px solid var(--primary);
+      margin-left: 10px;
+    }
+
+    .section {
+      padding: 44px 0;
+    }
+
+    .section-title {
+      font-size: 1.65rem;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+
+    .section-sub {
+      color: var(--muted);
+      margin-bottom: 28px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+
+    .card h3 {
+      margin-bottom: 10px;
+      color: var(--primary);
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: var(--muted);
+      font-size: 0.96rem;
+    }
+
+    .program-box {
+      background: var(--primary-light);
+      border: 1px solid #c6dfd3;
+      border-radius: 16px;
+      padding: 32px;
+      margin-top: 12px;
+    }
+
+    .program-box h2 {
+      color: var(--primary);
+      margin-bottom: 10px;
+    }
+
+    footer {
+      margin-top: 48px;
+      border-top: 1px solid var(--border);
+      background: var(--surface);
+      padding: 28px 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    .disclaimer {
+      margin-top: 12px;
+      font-size: 0.82rem;
+      color: #77807a;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#">Manthan Bites</a>
+      <nav class="nav-links">
+        <a href="#pillars">Pillars</a>
+        <a href="#articles">Articles</a>
+        <a href="#program">Free Program</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container">
+        <div class="badge">Mindful Eating • Gut Health • Weight Management</div>
+        <h1>Bina Crash Diet Ke <span>Sustainable Weight Management</span></h1>
+        <p>
+          Manthan Bites mein hum seekhte hain kaise dhyan se chabaakar khane, digestion sudharne, aur rozmarra ki chhoti-chhoti aadat se sharir ko natural balance mein laaya ja sakta hai.
+        </p>
+        <a class="btn" href="#program">Free Weekly Program Dekhein</a>
+        <a class="btn btn-outline" href="#articles">Guides Padhein</a>
+      </div>
+    </section>
+
+    <section id="pillars" class="section">
+      <div class="container">
+        <h2 class="section-title">Hamare 3 Mukhya Stambh</h2>
+        <p class="section-sub">Kisi temporary diet plan ke bajay lambi umar chalne wali aadat par focus.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>1. Mindful Eating & Slow Chewing</h3>
+            <p>Har niwale ko dhyan se chabaana, phone se door rehkar khana, aur bhukh-pet bharne ke sanket ko samajhna.</p>
+          </div>
+          <div class="card">
+            <h3>2. Gut Health & Digestion</h3>
+            <p>Acha digestion aur balanced gut microbiome behtar energy, kam bloating aur healthy metabolism ki neev hai.</p>
+          </div>
+          <div class="card">
+            <h3>3. Daily Habit Consistency</h3>
+            <p>Bina extreme bhukh ya guilt ke, har hafte ek chhoti aur practical aadat ko apni dincharya mein jorna.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="articles" class="section">
+      <div class="container">
+        <h2 class="section-title">Shuruati Guides & Notes</h2>
+        <p class="section-sub">Aane wale samay mein yahan naye articles aur practical weight management tips judte rahenge.</p>
+        <div class="grid">
+          <div class="card">
+            <h3>Dheere Chabaakar Khane Ki Aadat</h3>
+            <p>Jaldi khane se overeating kyun hoti hai aur har bite ko dhyan se chabaane se pachan aur energy par kya asar padta hai.</p>
+          </div>
+          <div class="card">
+            <h3>Paani Peene Ka Sahi Tarika</h3>
+            <p>Din bhar mein dhyan se paani peene aur khane ke turant baad ki aadat ko samajhne ki buniyadi baatein.</p>
+          </div>
+          <div class="card">
+            <h3>Bina Stress Ke Weight Balance</h3>
+            <p>Kya weight management sirf calories ginne ka naam hai ya aadat aur man ki sthiti ka bhi hissa hai?</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="program" class="section">
+      <div class="container">
+        <div class="program-box">
+          <h2>Manthan Bites Free Guided Weekly Weight Management Program</h2>
+          <p style="margin-bottom: 16px;">
+            Hamara community program un logon ke liye hai jo bina crash dieting ke, guided weekly steps ke saath apni eating habits sudharna chahte hain.
+          </p>
+          <a class="btn" href="mailto:manthanbites@gmail.com?subject=Manthan%20Bites%20Weekly%20Program%20Inquiry">
+            Program Ki Jaankari Lein
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div>© 2026 Manthan Bites. All rights reserved.</div>
+      <div class="disclaimer">
+        Educational & informational purpose only. This content is not medical advice; consult a qualified healthcare professional for personal medical concerns.
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
