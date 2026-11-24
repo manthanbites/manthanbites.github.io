@@ -1,0 +1,44 @@
+MANThANBITES — SEO CHECKLIST (Hindi)
+
+HAR PAGE
+[ ] Unique, descriptive <title>
+[ ] Unique and accurate meta description
+[ ] One visible, descriptive H1 that matches the page
+[ ] Canonical URL points to the exact preferred URL
+[ ] Page is useful and accessible without JavaScript
+[ ] Images have meaningful alt text (decorative images use alt="")
+[ ] Internal links use normal <a href="..."> links
+[ ] No broken links, placeholder text, or duplicate metadata
+[ ] Mobile layout works and page is readable
+[ ] No unsupported health claims or guaranteed outcomes
+
+ARTICLE PAGES
+[ ] Article title accurately reflects the visible article
+[ ] Author/editorial attribution is truthful and linked to a real profile
+[ ] Published/updated dates are real; do not invent or refresh dates
+[ ] Sources are linked near the claims they support
+[ ] BlogPosting JSON-LD matches visible page content
+[ ] Canonical URL is self-referential and matches sitemap
+[ ] Representative image exists before adding og:image / schema image
+
+SEARCH CONSOLE
+[ ] Verify https://manthanbites.github.io/ property
+[ ] Submit https://manthanbites.github.io/sitemap.xml
+[ ] Inspect homepage and all three articles
+[ ] Check indexing status, canonical selected by Google, mobile usability signals
+[ ] Request indexing only after a page is live and corrected
+[ ] Recheck after Google has had time to crawl
+
+PERFORMANCE
+[ ] Compress images; prefer WebP/AVIF when supported
+[ ] Avoid oversized hero images and unnecessary scripts
+[ ] Check PageSpeed Insights on mobile and desktop
+[ ] Aim for Core Web Vitals: LCP <= 2.5s, INP < 200ms, CLS < 0.1
+
+HEALTH CONTENT TRUST
+[ ] Distinguish general education from personal medical advice
+[ ] Do not promise weight loss, cures, detox, or guaranteed outcomes
+[ ] Avoid fixed water/chewing rules for everyone
+[ ] Cite credible sources for factual health claims
+[ ] Disclose sponsorships/affiliate relationships where applicable
+[ ] Do not claim clinical review unless a qualified reviewer actually reviewed it
