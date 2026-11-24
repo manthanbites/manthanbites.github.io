@@ -1,0 +1,22 @@
+{
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://manthanbites.github.io/[EXACT-FILENAME].html"
+  },
+  "headline": "[VISIBLE ARTICLE H1 — KEEP CONCISE]",
+  "description": "[ACCURATE ARTICLE SUMMARY]",
+  "datePublished": "[YYYY-MM-DDTHH:MM:SS+05:30]",
+  "dateModified": "[YYYY-MM-DDTHH:MM:SS+05:30]",
+  "author": {
+    "@type": "Organization",
+    "name": "ManthanBites Editorial Team",
+    "url": "https://manthanbites.github.io/author.html"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "ManthanBites",
+    "url": "https://manthanbites.github.io/"
+  }
+}
