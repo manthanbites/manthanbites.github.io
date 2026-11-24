@@ -1,305 +1,49 @@
-<!DOCTYPE html>
-<html lang="hi">
+<!doctype html>
+<html lang="hi-IN">
 <head>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "Paani Peene Ka Sahi Tarika: Digestion Aur Daily Energy Ke Liye Chhoti Aadat",
-    "description": "Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.",
-    "inLanguage": "hi",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html"
-    },
-    "author": {
-      "@type": "Person",
-      "name": "Rajni Pant"
-    },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Manthan Bites",
-      "url": "https://manthanbites.github.io/"
-    }
-  }
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paani Peene Ka Sahi Tarika | Manthan Bites</title>
-  <style>
-    :root {
-      --bg: #faf8f5;
-      --surface: #ffffff;
-      --primary: #1f5c43;
-      --primary-light: #e7f2ed;
-      --text: #1e2421;
-      --muted: #5c6660;
-      --border: #e3e7e4;
-    }
-
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
-
-    body {
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-      background-color: var(--bg);
-      color: var(--text);
-      line-height: 1.75;
-    }
-
-    .container {
-      max-width: 820px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    .wide-container {
-      max-width: 980px;
-      margin: 0 auto;
-      padding: 0 20px;
-    }
-
-    header {
-      background: var(--surface);
-      border-bottom: 1px solid var(--border);
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-
-    .nav {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 16px 0;
-      gap: 16px;
-      flex-wrap: wrap;
-    }
-
-    .brand {
-      font-size: 1.35rem;
-      font-weight: 700;
-      color: var(--primary);
-      text-decoration: none;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 20px;
-      flex-wrap: wrap;
-    }
-
-    .nav-links a {
-      text-decoration: none;
-      color: var(--text);
-      font-weight: 500;
-      font-size: 0.95rem;
-    }
-
-    .nav-links a:hover {
-      color: var(--primary);
-    }
-
-    article {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 16px;
-      padding: 36px 28px;
-      margin-top: 32px;
-    }
-
-    .meta {
-      display: inline-block;
-      background: var(--primary-light);
-      color: var(--primary);
-      padding: 5px 12px;
-      border-radius: 999px;
-      font-size: 0.82rem;
-      font-weight: 600;
-      margin-bottom: 14px;
-    }
-
-    h1 {
-      font-size: clamp(1.75rem, 4vw, 2.45rem);
-      line-height: 1.25;
-      margin-bottom: 12px;
-      color: var(--text);
-    }
-
-    .subtitle {
-      color: var(--muted);
-      font-size: 1.05rem;
-      margin-bottom: 24px;
-      padding-bottom: 20px;
-      border-bottom: 1px solid var(--border);
-    }
-
-    h2 {
-      font-size: 1.35rem;
-      color: var(--primary);
-      margin: 28px 0 10px;
-    }
-
-    p {
-      margin-bottom: 16px;
-      color: var(--text);
-      font-size: 1rem;
-    }
-
-    ul {
-      margin: 12px 0 20px 22px;
-    }
-
-    li {
-      margin-bottom: 10px;
-      color: var(--text);
-    }
-
-    .tip-box {
-      background: var(--primary-light);
-      border-left: 4px solid var(--primary);
-      border-radius: 10px;
-      padding: 18px 20px;
-      margin: 24px 0;
-    }
-
-    .tip-box strong {
-      color: var(--primary);
-      display: block;
-      margin-bottom: 6px;
-    }
-
-    .cta-box {
-      background: var(--bg);
-      border: 1px solid var(--border);
-      border-radius: 14px;
-      padding: 24px;
-      margin-top: 32px;
-    }
-
-    .cta-box h3 {
-      color: var(--primary);
-      margin-bottom: 8px;
-    }
-
-    .cta-box p {
-      color: var(--muted);
-      margin-bottom: 16px;
-    }
-
-    .btn {
-      display: inline-block;
-      background: var(--primary);
-      color: #fff;
-      padding: 11px 22px;
-      border-radius: 10px;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 0.95rem;
-    }
-
-    .back-link {
-      display: inline-block;
-      margin-top: 20px;
-      color: var(--primary);
-      text-decoration: none;
-      font-weight: 600;
-    }
-
-    footer {
-      margin-top: 48px;
-      border-top: 1px solid var(--border);
-      background: var(--surface);
-      padding: 28px 0;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-
-    .disclaimer {
-      margin-top: 12px;
-      font-size: 0.82rem;
-      color: #77807a;
-    }
-  </style>
-  <meta property="og:type" content="article" />
-  <meta property="og:url" content="https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html" />
-  <meta property="og:title" content="Paani Peene Ka Sahi Tarika | Manthan Bites" />
-  <meta property="og:description" content="Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai." />
-  <meta property="og:locale" content="hi_IN" />
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Paani Peene Ka Sahi Tarika: Digestion Aur Daily Energy Ke Liye Chhoti Aadat | ManthanBites</title>
+  <meta name="description" content="Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.">
+  <link rel="canonical" href="https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html">
+  <meta property="og:type" content="article"><meta property="og:locale" content="hi_IN">
+  <meta property="og:site_name" content="ManthanBites"><meta property="og:url" content="https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html">
+  <meta property="og:title" content="Paani Peene Ka Sahi Tarika: Digestion Aur Daily Energy Ke Liye Chhoti Aadat | ManthanBites"><meta property="og:description" content="Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.">
+  <meta name="twitter:card" content="summary">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script type="application/ld+json">{
+    "@context":"https://schema.org","@type":"Article","headline":"Paani Peene Ka Sahi Tarika: Digestion Aur Daily Energy Ke Liye Chhoti Aadat",
+    "description":"Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.","inLanguage":"hi-IN",
+    "mainEntityOfPage":{"@type":"WebPage","@id":"https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html"},
+    "author":{"@type":"Person","name":"Rajni Pant"},
+    "publisher":{"@type":"Organization","name":"ManthanBites","url":"https://manthanbites.github.io/"}
+  }</script>
 </head>
-<body>
-  <header>
-    <div class="wide-container nav">
-      <a class="brand" href="index.html">Manthan Bites</a>
-      <nav class="nav-links">
-        <a href="index.html#pillars">Pillars</a>
-        <a href="index.html#articles">Articles</a>
-        <a href="index.html#program">Free Program</a>
-      </nav>
-    </div>
-  </header>
-
-  <main class="container">
-    <article>
-      <div class="meta">Gut Health • Daily Habits</div>
+<body class="article-page">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="announcement">Small steps. Better habits. Healthier everyday choices. <a href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener noreferrer">Watch ManthanBites on YouTube ↗</a></div>
+  <header class="site-header"><div class="container nav-wrap">
+    <a class="brand" href="index.html"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false"><span></span><span></span><span></span></button>
+    <nav id="primary-nav" class="nav-links" aria-label="Main navigation"><a href="index.html#pillars">Explore</a><a href="index.html#articles">Articles</a><a href="index.html#program">Our approach</a><a class="nav-cta" href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener noreferrer">Subscribe <span>↗</span></a></nav>
+  </div></header>
+  <main id="main" class="article-top">
+    <article class="article-shell">
+      <div class="article-kicker">Gut Health • Daily Habits</div>
       <h1>Paani Peene Ka Sahi Tarika: Digestion Aur Daily Energy Ke Liye Chhoti Aadat</h1>
-      <p class="subtitle">
-        Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.
-      </p>
-
-      <h2>Ghoont-Ghoont Peene Ki Aadat Kyun Zaroori Hai?</h2>
-      <p>
-        Aksar hum pyas lagne par ek saath tezi se bahut saara paani gatak lete hain. Jab paani ko dhyan se ghoont-ghoont karke piya jata hai, toh woh zyada aaram se aur naturally sharir ke rhythm ke saath aage badhta hai.
-      </p>
-      <p>
-        Mindful eating ki tarah hydration mein bhi jaldbazi ke bajay thoda thehraav aur samajh zaroori hai.
-      </p>
-
-      <h2>Rozmarra Ke Liye Practical Hydration Tips</h2>
-      <ul>
-        <li><strong>Ghoont-ghoont karke piyein:</strong> Ek hi baar mein bada glass gatakne ke bajay chhote-chhote sips mein paani peene ki aadat banayein.</li>
-        <li><strong>Khane ke turant baad zyada paani peene se bachein:</strong> Khana khate hi turant bahut saara paani peene ke bajay meal ke aas-paas ke samay ko dhyaan mein rakhein.</li>
-        <li><strong>Subah aur mausam ke hisab se temperature chunein:</strong> Subah uthne ke baad ya thande mausam mein bohot thande paani ke bajay room temperature ya halka warm paani zyada comfortable lagta hai.</li>
-        <li><strong>Baithkar aur aaram se paani piyein:</strong> Chalte-phirte ya bhagdaud mein paani peene ke bajay rukkar sukoon se peene ki koshish karein.</li>
-      </ul>
-
-      <div class="tip-box">
-        <strong>Aaj Ka Chhota Challenge</strong>
-        Aaj din mein jab bhi paani piyein, toh pehle 3 ghoont bilkul dheere aur dhyan se lein. Dekhein ki aapko kaisa mehsoos hota hai.
+      <p class="article-subtitle">Sirf din bhar mein paani peena hi kaafi nahi hota—paani kis tarah aur kis samay piya ja raha hai, iska asar aaram aur digestion par padta hai.</p>
+      <div class="article-content">
+        <h2>Ghoont-Ghoont Peene Ki Aadat Kyun Zaroori Hai?</h2><p>Aksar hum pyas lagne par ek saath tezi se bahut saara paani gatak lete hain. Jab paani ko dhyan se ghoont-ghoont karke piya jata hai, toh woh zyada aaram se aur naturally sharir ke rhythm ke saath aage badhta hai.</p><p>Mindful eating ki tarah hydration mein bhi jaldbazi ke bajay thoda thehraav aur samajh zaroori hai.</p>
+        <h2>Rozmarra Ke Liye Practical Hydration Tips</h2><ul><li><strong>Ghoont-ghoont karke piyein:</strong> Ek hi baar mein bada glass gatakne ke bajay chhote-chhote sips mein paani peene ki aadat banayein.</li><li><strong>Khane ke turant baad zyada paani peene se bachein:</strong> Khana khate hi turant bahut saara paani peene ke bajay meal ke aas-paas ke samay ko dhyaan mein rakhein.</li><li><strong>Subah aur mausam ke hisab se temperature chunein:</strong> Subah uthne ke baad ya thande mausam mein bohot thande paani ke bajay room temperature ya halka warm paani zyada comfortable lagta hai.</li><li><strong>Baithkar aur aaram se paani piyein:</strong> Chalte-phirte ya bhagdaud mein paani peene ke bajay rukkar sukoon se peene ki koshish karein.</li></ul>
+        <div class="article-tip"><strong>Aaj Ka Chhota Challenge</strong>Aaj din mein jab bhi paani piyein, toh pehle 3 ghoont bilkul dheere aur dhyan se lein. Dekhein ki aapko kaisa mehsoos hota hai.</div>
+        <h2>Weight Management Aur Habit Routine Mein Iski Jagah</h2><p>Jab hum chhoti-chhoti rozmarra ki aadaton—jaise slow chewing aur dhyan se paani peena—ko apnate hain, toh poore din ki routine zyada conscious banti hai. Yahi conscious approach long-term weight management ko practical aur sustainable banati hai.</p>
+        <section class="article-cta"><h2>Agla Kadam: Free Weekly Weight Management Program</h2><p><strong>Paani peene ka sahi tarika</strong> aur <a href="dheere-chabakar-khane-ki-aadat.html">slow chewing aur mindful eating</a> ko apni rozmarra ki aadat banane ke liye <a href="index.html#program">free weekly weight management program</a> dekhein, ya <a href="bina-stress-ke-weight-balance.html">bina stress weight management</a> guide padhein.</p>
+          <p>Program ki details aur availability ke liye hamare contact channel par message bhejein. Public contact details ko publish karne se pehle consent verify karein.</p>
+          <a class="button button-primary" href="index.html#program">Program ke baare mein jaanein <span>→</span></a>
+        </section>
       </div>
-
-      <h2>Weight Management Aur Habit Routine Mein Iski Jagah</h2>
-      <p>
-        Jab hum chhoti-chhoti rozmarra ki aadaton—jaise slow chewing aur dhyan se paani peena—ko apnate hain, toh poore din ki routine zyada conscious banti hai. Yahi conscious approach long-term weight management ko practical aur sustainable banati hai.
-      </p>
-
-      <div class="cta-box">
-        <h3>Agla Kadam: Free Weekly Weight Management Program</h3>
-        <p>
-          <strong>Paani peene ka sahi tarika</strong> aur <a href="dheere-chabakar-khane-ki-aadat.html" style="color:var(--primary); font-weight:600;">slow chewing aur mindful eating</a> ko apni rozmarra ki aadat banane ke liye <a href="index.html#program" style="color:var(--primary); font-weight:600;">free weekly weight management program</a> dekhein, ya <a href="bina-stress-ke-weight-balance.html" style="color:var(--primary); font-weight:600;">bina stress weight management</a> guide padhein.
-        </p>
-        <p>
-          Margdarshan ke liye <strong>Rajni Pant</strong> (Haridwar) se seedha WhatsApp par baat karein.
-        </p>
-        <a class="btn" href="https://wa.me/919286688044?text=Namaste%20Rajni%20ji%2C%20mujhe%20Manthan%20Bites%20Free%20Weekly%20Weight%20Management%20Program%20ki%20jaankari%20chahiye." target="_blank" rel="noopener noreferrer">
-          WhatsApp Par Jaankari Lein
-        </a>
-      </div>
-
-      <a class="back-link" href="index.html">← Sabhi Articles / Homepage par waapas jayein</a>
+      <a class="article-back" href="index.html#articles">← Sabhi Articles / Homepage par waapas jayein</a>
     </article>
   </main>
-
-  <footer>
-    <div class="wide-container">
-      <div>© 2026 Manthan Bites. All rights reserved.</div>
-      <div class="disclaimer">
-        Educational &amp; informational purpose only. This content is not medical advice; consult a qualified healthcare professional for personal medical concerns.
-      </div>
-    </div>
-  </footer>
-</body>
-</html>
+  <footer class="article-footer"><div class="container">© 2026 ManthanBites. All rights reserved. <br>Educational & informational purpose only. This content is not medical advice; consult a qualified healthcare professional for personal medical concerns. <a href="disclaimer.html">Disclaimer</a> · <a href="privacy.html">Privacy</a></div></footer>
+  <script src="assets/js/main.js" defer></script>
+</body></html>
