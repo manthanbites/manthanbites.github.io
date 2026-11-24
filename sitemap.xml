@@ -2,22 +2,14 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://manthanbites.github.io/</loc>
-    <changefreq>weekly</changefreq>
-    <priority>1.0</priority>
   </url>
   <url>
     <loc>https://manthanbites.github.io/dheere-chabakar-khane-ki-aadat.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://manthanbites.github.io/bina-stress-ke-weight-balance.html</loc>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
   </url>
 </urlset>
