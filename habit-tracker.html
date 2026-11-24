@@ -1,0 +1,24 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="engage.css"><title>Healthy Habit Tracker | ManthanBites</title><meta name="description" content="Apni healthy habits ko rozana tick karein, streak banayein. Free habit tracker."><link rel="canonical" href="https://manthanbites.github.io/habit-tracker.html"></head><body><header><a class="logo" href="index.html">ManthanBites</a><a href="bmi-calculator.html">BMI</a><a href="mindful-eating-quiz.html">Quiz</a><a href="habit-tracker.html">Tracker</a><a href="7-day-healthy-habits-challenge.html">7-Day Challenge</a></header><main>
+<h1>Habit Tracker</h1><p class="sub">Pichhle 7 din ki habits ek nazar mein. Cell par tap karke tick karein.</p>
+<div class="card tw"><table id="t"></table></div>
+<div class="card"><label for="n">Nayi habit jodein</label><input id="n" maxlength="40" placeholder="e.g. Raat ko jaldi sona"><p><button id="add">Jodein</button> <button class="alt" id="rm">Aakhri habit hatayein</button></p></div>
+<p class="note">Aapka data sirf is browser mein save hota hai (aapke phone ya computer par), kisi server par nahi.</p><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
+<script>
+var K='mb_tracker',s;try{s=JSON.parse(localStorage.getItem(K))}catch(e){}
+s=s||{h:['Dheere chabakar khana','Paani (8 glass)','10 min walk','Phone-free meal'],l:{}};
+function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}
+function dk(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
+var D=[];for(var k=6;k>=0;k--){var d=new Date();d.setDate(d.getDate()-k);D.push(d)}
+function on(day,h){return (s.l[dk(day)]||[]).indexOf(h)>-1}
+function streak(h){var n=0,d=new Date();if(!on(d,h))d.setDate(d.getDate()-1);while(on(d,h)){n++;d.setDate(d.getDate()-1)}return n}
+function el(t,x,c){var e=document.createElement(t);if(x!=null)e.textContent=x;if(c)e.className=c;return e}
+function render(){var t=document.getElementById('t');t.textContent='';var r=el('tr');r.appendChild(el('th','Habit'));
+D.forEach(function(d){r.appendChild(el('th',['Ravi','Som','Mang','Budh','Guru','Shukr','Shani'][d.getDay()]))});r.appendChild(el('th','Streak'));t.appendChild(r);
+s.h.forEach(function(h){var tr=el('tr');tr.appendChild(el('td',h));
+D.forEach(function(d){var td=el('td'),b=el('button',on(d,h)?'✓':'','cell'+(on(d,h)?' on':''));b.setAttribute('aria-label',h);
+b.onclick=function(){var key=dk(d),a=s.l[key]||[],j=a.indexOf(h);j>-1?a.splice(j,1):a.push(h);s.l[key]=a;save();render()};td.appendChild(b);tr.appendChild(td)});
+tr.appendChild(el('td',streak(h)+' din'));t.appendChild(tr)})}
+document.getElementById('add').onclick=function(){var v=document.getElementById('n').value.trim();if(v&&s.h.indexOf(v)<0&&s.h.length<12){s.h.push(v);document.getElementById('n').value='';save();render()}};
+document.getElementById('rm').onclick=function(){if(s.h.length>1){s.h.pop();save();render()}};
+render();
+</script></main></body></html>

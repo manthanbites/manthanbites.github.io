@@ -1,0 +1,19 @@
+<!doctype html><html lang="hi"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><link rel="stylesheet" href="engage.css"><title>BMI Calculator (Indian Standards) | ManthanBites</title><meta name="description" content="Height aur weight daalkar BMI jaanein, Asian-Indian cutoffs ke saath. Simple Hinglish mein samjhaya gaya."><link rel="canonical" href="https://manthanbites.github.io/bmi-calculator.html"></head><body><header><a class="logo" href="index.html">ManthanBites</a><a href="bmi-calculator.html">BMI</a><a href="mindful-eating-quiz.html">Quiz</a><a href="habit-tracker.html">Tracker</a><a href="7-day-healthy-habits-challenge.html">7-Day Challenge</a></header><main>
+<h1>BMI Calculator</h1><p class="sub">Apni height aur weight daalein. Result ko ek starting point ki tarah dekhein, final verdict ki tarah nahi.</p>
+<div class="card"><label for="h">Height (cm)</label><input id="h" type="number" inputmode="decimal" min="100" max="230" placeholder="e.g. 165">
+<label for="w">Weight (kg)</label><input id="w" type="number" inputmode="decimal" min="20" max="250" placeholder="e.g. 62"><p><button id="go">BMI nikaalein</button></p></div>
+<div class="card hide" id="out"><div class="big" id="v"></div><h2 id="cat"></h2><p id="msg"></p></div>
+<div class="card"><h2>Indian BMI ranges</h2><p>Indians mein kam BMI par bhi metabolic risk badh sakta hai, isliye Asian-Indian cutoffs use kiye gaye hain: 18.5 se kam (underweight), 18.5 se 22.9 (healthy range), 23 se 24.9 (overweight range), 25 ya zyada (obese range).</p>
+<p>BMI ki limits: yeh muscle, body frame, umar aur pet ki charbi (waist) ko alag se nahi dekhta. Waist ka maap bhi useful hota hai. Pregnancy mein ya 18 saal se kam umar mein yeh calculator sahi nahi hai.</p></div>
+<p><a class="btn" href="7-day-healthy-habits-challenge.html">7-day challenge shuru karein</a></p><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
+<script>
+document.getElementById('go').onclick=function(){var h=parseFloat(h_.value)/100,w=parseFloat(w_.value);
+if(!(h>1&&w>20)){alert('Sahi height (cm) aur weight (kg) daalein.');return}
+var b=w/(h*h),c,m;
+if(b<18.5){c='Underweight range';m='Weight thoda kam hai. Poshan se bharpoor khana, protein aur regular meals par dhyan dein. Agar achanak weight gira hai, doctor se zaroor milein.'}
+else if(b<23){c='Healthy range';m='Aap Indian cutoffs ke hisaab se healthy range mein hain. Balanced plate aur chalne-phirne ki aadat banaye rakhein.'}
+else if(b<25){c='Overweight range';m='Thoda upar hai. Crash diet ki zaroorat nahi: dheere khana, paani, walk aur neend jaisi chhoti aadatein kaafi madad karti hain.'}
+else{c='Obese range';m='BMI zyada hai. Kisi doctor ya dietitian se baat karna achha rahega, wo aapki puri health dekhkar sahi salah denge. Chhoti, tikau aadatein hamesha shuru karne ki jagah hain.'}
+document.getElementById('v').textContent=b.toFixed(1);document.getElementById('cat').textContent=c;document.getElementById('msg').textContent=m;document.getElementById('out').classList.remove('hide')};
+var h_=document.getElementById('h'),w_=document.getElementById('w');
+</script></main></body></html>
