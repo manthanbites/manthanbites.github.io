@@ -41,39 +41,38 @@
     .faq details p{margin:12px 0 0;color:var(--muted);font-size:.9rem}
     @media(max-width:1100px){.nav-links{gap:18px}}
 
-    /* Images ko cards me fit karne ke liye CSS */
-    .card-img-top {
-      width: 100%;
-      height: 180px;
-      object-fit: cover;
-      border-radius: 12px;
-      margin-bottom: 16px;
-      display: block;
+    .card-svg-top{
+      width:100%;
+      height:160px;
+      border-radius:12px;
+      margin-bottom:16px;
+      display:block;
+      background:#f4f7f5;
     }
-    .article-art {
-      padding: 0 !important;
-      position: relative;
-      overflow: hidden;
-      display: block;
+    .article-art{
+      padding:0 !important;
+      position:relative;
+      overflow:hidden;
+      display:block;
+      background:#f4f7f5;
     }
-    .article-art-img {
-      width: 100%;
-      height: 220px;
-      object-fit: cover;
-      display: block;
+    .article-art-svg{
+      width:100%;
+      height:200px;
+      display:block;
     }
-    .art-label {
-      position: absolute;
-      top: 16px;
-      left: 16px;
-      background: #ffffff;
-      color: #173f35;
-      padding: 6px 14px;
-      border-radius: 20px;
-      font-size: 0.75rem;
-      font-weight: 700;
-      z-index: 2;
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    .art-label{
+      position:absolute;
+      top:16px;
+      left:16px;
+      background:#ffffff;
+      color:#173f35;
+      padding:6px 14px;
+      border-radius:20px;
+      font-size:0.75rem;
+      font-weight:700;
+      z-index:2;
+      box-shadow:0 2px 6px rgba(0,0,0,0.1);
     }
   </style>
   <script type="application/ld+json">
@@ -123,15 +122,29 @@
       <div class="section-heading"><div><p class="eyebrow">START WITH WHAT MATTERS</p><h2>Explore your wellness journey</h2></div><p>Har topic ko easy steps aur relatable examples ke saath samjhein.</p></div>
       <div class="topic-grid">
         <a class="topic-card topic-mindful" href="dheere-chabakar-khane-ki-aadat.html">
-          <img src="https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mindful Eating">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="Mindful Eating">
+            <rect width="400" height="160" fill="#e8efe9"/>
+            <circle cx="200" cy="80" r="46" fill="#173f35" opacity="0.12"/>
+            <circle cx="200" cy="80" r="28" fill="#173f35"/>
+            <circle cx="200" cy="80" r="10" fill="#d9efe2"/>
+          </svg>
           <span class="topic-number">01 / EAT WITH AWARENESS</span><h3>Mindful Eating</h3><p>Hunger, fullness aur food ke saath apne relationship ko samajhna seekhein.</p><span class="card-link">Explore topic <b>↗</b></span>
         </a>
         <a class="topic-card topic-gut" href="paani-peene-ka-sahi-tarika.html">
-          <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Gut Health">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="Gut Health">
+            <rect width="400" height="160" fill="#e6f0ee"/>
+            <path d="M120 95 Q160 55 200 95 T280 95" fill="none" stroke="#173f35" stroke-width="6" stroke-linecap="round"/>
+            <circle cx="200" cy="52" r="10" fill="#2d6a5b"/>
+          </svg>
           <span class="topic-number">02 / GUT & DIGESTION</span><h3>Gut Health</h3><p>Digestion, hydration aur daily food choices par practical information.</p><span class="card-link">Explore topic <b>↗</b></span>
         </a>
         <a class="topic-card topic-weight" href="bina-stress-ke-weight-balance.html">
-          <img src="https://images.unsplash.com/photo-1506126613408-eca07ce68773?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Weight Management">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="Weight Management">
+            <rect width="400" height="160" fill="#f3ece1"/>
+            <line x1="120" y1="80" x2="280" y2="80" stroke="#173f35" stroke-width="5" stroke-linecap="round"/>
+            <circle cx="150" cy="80" r="18" fill="#173f35"/>
+            <circle cx="250" cy="80" r="18" fill="#3a7564"/>
+          </svg>
           <span class="topic-number">03 / BALANCED LIVING</span><h3>Weight Management</h3><p>Extreme rules ke bajay sustainable routines aur realistic expectations.</p><span class="card-link">Explore topic <b>↗</b></span>
         </a>
       </div>
@@ -141,19 +154,39 @@
       <div class="section-heading"><div><p class="eyebrow">TRY • TRACK • GROW</p><h2>Free wellness tools</h2></div><p>Chhote, free tools jo aapki healthy habits ko track karne mein madad karte hain.</p></div>
       <div class="topic-grid tools-grid">
         <a class="topic-card topic-weight" href="bmi-calculator.html">
-          <img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="BMI Calculator">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="BMI Calculator">
+            <rect width="400" height="160" fill="#f3ece1"/>
+            <rect x="145" y="42" width="110" height="76" rx="14" fill="#173f35"/>
+            <path d="M175 92 A25 25 0 0 1 225 92" fill="none" stroke="#e9f5ee" stroke-width="5" stroke-linecap="round"/>
+            <line x1="200" y1="92" x2="216" y2="74" stroke="#f2b84b" stroke-width="5" stroke-linecap="round"/>
+          </svg>
           <span class="topic-number">TOOL 01</span><h3>BMI Calculator</h3><p>Indian standards ke hisaab se apna BMI jaanein.</p><span class="card-link">Try now <b>↗</b></span>
         </a>
         <a class="topic-card topic-mindful" href="mindful-eating-quiz.html">
-          <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mindful Eating Quiz">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="Mindful Eating Quiz">
+            <rect width="400" height="160" fill="#e8efe9"/>
+            <circle cx="200" cy="80" r="42" fill="#173f35"/>
+            <text x="200" y="93" text-anchor="middle" fill="#ffffff" font-size="36" font-weight="700" font-family="DM Sans, sans-serif">?</text>
+          </svg>
           <span class="topic-number">TOOL 02</span><h3>Mindful Eating Quiz</h3><p>8 sawaalon mein jaanein ki aap kitna mindfully khate hain.</p><span class="card-link">Take quiz <b>↗</b></span>
         </a>
         <a class="topic-card topic-gut" href="habit-tracker.html">
-          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fc36b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Habit Tracker">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="Habit Tracker">
+            <rect width="400" height="160" fill="#e6f0ee"/>
+            <rect x="140" y="36" width="120" height="88" rx="12" fill="#ffffff" stroke="#173f35" stroke-width="3"/>
+            <path d="M162 66 L172 76 L190 56" fill="none" stroke="#173f35" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="204" y1="66" x2="240" y2="66" stroke="#8aa89f" stroke-width="5" stroke-linecap="round"/>
+            <path d="M162 98 L172 108 L190 88" fill="none" stroke="#2d6a5b" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+            <line x1="204" y1="98" x2="240" y2="98" stroke="#8aa89f" stroke-width="5" stroke-linecap="round"/>
+          </svg>
           <span class="topic-number">TOOL 03</span><h3>Habit Tracker</h3><p>Rozana habits tick karein aur apni streak banayein.</p><span class="card-link">Start tracking <b>↗</b></span>
         </a>
         <a class="topic-card topic-mindful" href="7-day-healthy-habits-challenge.html">
-          <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="7-Day Healthy Habits">
+          <svg class="card-svg-top" viewBox="0 0 400 160" role="img" aria-label="7-Day Healthy Habits">
+            <rect width="400" height="160" fill="#e8efe9"/>
+            <rect x="135" y="38" width="130" height="84" rx="12" fill="#173f35"/>
+            <text x="200" y="92" text-anchor="middle" fill="#ffffff" font-size="38" font-weight="800" font-family="DM Sans, sans-serif">7D</text>
+          </svg>
           <span class="topic-number">FREE CHALLENGE</span><h3>7-Day Healthy Habits</h3><p>7 din, 7 chhoti habits. Koi diet nahi, koi pressure nahi.</p><span class="card-link">Join challenge <b>↗</b></span>
         </a>
       </div>
@@ -166,21 +199,32 @@
         <article class="article-card">
           <a class="article-art art-bite" href="dheere-chabakar-khane-ki-aadat.html" aria-label="Read mindful eating guide">
             <span class="art-label">MINDFUL EATING</span>
-            <img src="https://images.unsplash.com/photo-1498837167922-ddd27525d352?auto=format&fit=crop&w=600&q=80" class="article-art-img" alt="Mindful Eating">
+            <svg class="article-art-svg" viewBox="0 0 400 200" role="img" aria-label="Dheere Chabaakar Khane Ki Aadat">
+              <rect width="400" height="200" fill="#e8efe9"/>
+              <circle cx="200" cy="110" r="52" fill="#173f35"/>
+              <circle cx="200" cy="110" r="24" fill="#d9efe2"/>
+            </svg>
           </a>
           <div class="article-body"><p class="article-meta">EVERYDAY HABIT <span>•</span> 5 MIN READ</p><h3><a href="dheere-chabakar-khane-ki-aadat.html">Dheere Chabaakar Khane Ki Aadat</a></h3><p>Meal ke dauraan pace slow karna aur food par dhyan dena kaise shuru karein.</p><a class="read-link" href="dheere-chabakar-khane-ki-aadat.html">Read guide <span>→</span></a></div>
         </article>
         <article class="article-card">
           <a class="article-art art-water" href="paani-peene-ka-sahi-tarika.html" aria-label="Read hydration guide">
             <span class="art-label">HYDRATION</span>
-            <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80" class="article-art-img" alt="Hydration">
+            <svg class="article-art-svg" viewBox="0 0 400 200" role="img" aria-label="Paani Peene Ka Sahi Tarika">
+              <rect width="400" height="200" fill="#e4f0ee"/>
+              <path d="M200 58 C172 98 160 120 160 138 A40 40 0 0 0 240 138 C240 120 228 98 200 58 Z" fill="#2d6a5b"/>
+            </svg>
           </a>
           <div class="article-body"><p class="article-meta">DAILY WELLNESS <span>•</span> 5 MIN READ</p><h3><a href="paani-peene-ka-sahi-tarika.html">Paani Peene Ka Sahi Tarika</a></h3><p>Hydration ko apni thirst, routine aur daily needs ke saath kaise samjhein.</p><a class="read-link" href="paani-peene-ka-sahi-tarika.html">Read guide <span>→</span></a></div>
         </article>
         <article class="article-card">
           <a class="article-art art-balance" href="bina-stress-ke-weight-balance.html" aria-label="Read weight balance guide">
             <span class="art-label">WEIGHT BALANCE</span>
-            <img src="https://images.unsplash.com/photo-1555244162-803834f70033?auto=format&fit=crop&w=600&q=80" class="article-art-img" alt="Weight Balance">
+            <svg class="article-art-svg" viewBox="0 0 400 200" role="img" aria-label="Bina Stress Ke Weight Balance">
+              <rect width="400" height="200" fill="#f3ece1"/>
+              <circle cx="200" cy="110" r="46" fill="none" stroke="#173f35" stroke-width="6"/>
+              <path d="M200 76 V110 L224 122" fill="none" stroke="#2d6a5b" stroke-width="6" stroke-linecap="round"/>
+            </svg>
           </a>
           <div class="article-body"><p class="article-meta">SUSTAINABLE HABITS <span>•</span> 5 MIN READ</p><h3><a href="bina-stress-ke-weight-balance.html">Bina Stress Ke Weight Balance</a></h3><p>Consistency, realistic goals aur balanced habits par ek practical nazariya.</p><a class="read-link" href="bina-stress-ke-weight-balance.html">Read guide <span>→</span></a></div>
         </article>
