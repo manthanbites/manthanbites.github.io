@@ -28,9 +28,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-  
   <style>
-    /* Aapka pehle se chal raha CSS code */
     .tools-grid{grid-template-columns:repeat(2,1fr)}
     @media(max-width:700px){.tools-grid{grid-template-columns:1fr}}
     .program-grid .topic-card{min-height:0}
@@ -43,7 +41,7 @@
     .faq details p{margin:12px 0 0;color:var(--muted);font-size:.9rem}
     @media(max-width:1100px){.nav-links{gap:18px}}
 
-    /* NAYE IMAGE FIT KARNE KE STYLES - ISSE IMAGES EK SIZE ME AUR BINA STRETCH HUE DIKHENGI */
+    /* Images ko cards me fit karne ke liye CSS */
     .card-img-top {
       width: 100%;
       height: 180px;
@@ -78,7 +76,6 @@
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
     }
   </style>
-
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -144,7 +141,6 @@
       <div class="section-heading"><div><p class="eyebrow">TRY • TRACK • GROW</p><h2>Free wellness tools</h2></div><p>Chhote, free tools jo aapki healthy habits ko track karne mein madad karte hain.</p></div>
       <div class="topic-grid tools-grid">
         <a class="topic-card topic-weight" href="bmi-calculator.html">
-          <!-- MAIN BMI CALCULATOR KI FIXED IMAGE YAHAN LAGAYI HAI -->
           <img src="https://images.unsplash.com/photo-1526401485004-46910ecc8e51?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="BMI Calculator">
           <span class="topic-number">TOOL 01</span><h3>BMI Calculator</h3><p>Indian standards ke hisaab se apna BMI jaanein.</p><span class="card-link">Try now <b>↗</b></span>
         </a>
@@ -152,9 +148,8 @@
           <img src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Mindful Eating Quiz">
           <span class="topic-number">TOOL 02</span><h3>Mindful Eating Quiz</h3><p>8 sawaalon mein jaanein ki aap kitna mindfully khate hain.</p><span class="card-link">Take quiz <b>↗</b></span>
         </a>
-        <!-- YE HABIT TRACKER KA NAYA WORKING LINK HAI -->
         <a class="topic-card topic-gut" href="habit-tracker.html">
-          <img src="https://images.unsplash.com/photo-1507925922837-326f12d525dd?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Habit Tracker">
+          <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fc36b?auto=format&fit=crop&w=600&q=80" class="card-img-top" alt="Habit Tracker">
           <span class="topic-number">TOOL 03</span><h3>Habit Tracker</h3><p>Rozana habits tick karein aur apni streak banayein.</p><span class="card-link">Start tracking <b>↗</b></span>
         </a>
         <a class="topic-card topic-mindful" href="7-day-healthy-habits-challenge.html">
@@ -168,7 +163,6 @@
 
     <section class="section container" id="latest"><div class="section-heading"><div><p class="eyebrow">READ • LEARN • APPLY</p><h2>Start with these guides</h2></div><p>Small changes can be a useful starting point. Choose one idea and make it your own.</p></div>
       <div class="article-grid">
-        
         <article class="article-card">
           <a class="article-art art-bite" href="dheere-chabakar-khane-ki-aadat.html" aria-label="Read mindful eating guide">
             <span class="art-label">MINDFUL EATING</span>
@@ -176,16 +170,13 @@
           </a>
           <div class="article-body"><p class="article-meta">EVERYDAY HABIT <span>•</span> 5 MIN READ</p><h3><a href="dheere-chabakar-khane-ki-aadat.html">Dheere Chabaakar Khane Ki Aadat</a></h3><p>Meal ke dauraan pace slow karna aur food par dhyan dena kaise shuru karein.</p><a class="read-link" href="dheere-chabakar-khane-ki-aadat.html">Read guide <span>→</span></a></div>
         </article>
-        
         <article class="article-card">
           <a class="article-art art-water" href="paani-peene-ka-sahi-tarika.html" aria-label="Read hydration guide">
             <span class="art-label">HYDRATION</span>
-            <!-- MAIN WATER/HYDRATION KI FIXED IMAGE YAHAN LAGAYI HAI -->
             <img src="https://images.unsplash.com/photo-1523362628745-0c100150b504?auto=format&fit=crop&w=600&q=80" class="article-art-img" alt="Hydration">
           </a>
           <div class="article-body"><p class="article-meta">DAILY WELLNESS <span>•</span> 5 MIN READ</p><h3><a href="paani-peene-ka-sahi-tarika.html">Paani Peene Ka Sahi Tarika</a></h3><p>Hydration ko apni thirst, routine aur daily needs ke saath kaise samjhein.</p><a class="read-link" href="paani-peene-ka-sahi-tarika.html">Read guide <span>→</span></a></div>
         </article>
-        
         <article class="article-card">
           <a class="article-art art-balance" href="bina-stress-ke-weight-balance.html" aria-label="Read weight balance guide">
             <span class="art-label">WEIGHT BALANCE</span>
@@ -193,7 +184,6 @@
           </a>
           <div class="article-body"><p class="article-meta">SUSTAINABLE HABITS <span>•</span> 5 MIN READ</p><h3><a href="bina-stress-ke-weight-balance.html">Bina Stress Ke Weight Balance</a></h3><p>Consistency, realistic goals aur balanced habits par ek practical nazariya.</p><a class="read-link" href="bina-stress-ke-weight-balance.html">Read guide <span>→</span></a></div>
         </article>
-        
       </div>
       <p class="program-cta"><a class="button button-primary" href="articles.html">Saare guides dekhein <span>→</span></a></p>
     </section>
