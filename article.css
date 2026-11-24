@@ -1,0 +1,13 @@
+.article-main{width:min(760px,calc(100% - 36px));margin:0 auto;padding:48px 0 80px}
+.crumbs{font-size:.78rem;color:var(--muted);margin-bottom:14px}.crumbs a{color:var(--forest);font-weight:700}
+.article-main h1{font-size:clamp(2rem,5vw,3rem);line-height:1.12;letter-spacing:-.06em;color:var(--forest);margin:0 0 12px}
+.byline{color:var(--muted);font-size:.82rem;margin:0 0 28px}.byline a{color:var(--forest);text-decoration:underline}
+.article-main h2{font-size:1.5rem;color:var(--forest);letter-spacing:-.04em;margin:40px 0 10px;line-height:1.2}
+.article-main p,.article-main li{font-size:1.02rem;line-height:1.85;color:#33423a}
+.article-main ul,.article-main ol{padding-left:22px}.article-main li{margin:6px 0}
+.box{border-radius:20px;padding:20px 24px;margin:26px 0}.box h3{margin:0 0 6px;font-size:1rem;color:var(--forest)}.box p{margin:0}
+.box.tldr{background:var(--sage)}.box.habit{background:#f5ead8}.box.doctor{background:#fdf0ec;border:1px solid #f0d3ca}
+.cta-card{background:var(--forest);border-radius:24px;padding:30px;margin:44px 0 10px}.cta-card h3{color:#fff;margin:0 0 8px;font-size:1.3rem;letter-spacing:-.03em}.cta-card p{color:#d1ded5;margin:0 0 18px;font-size:.95rem}.cta-card .button{margin:0 10px 10px 0}
+.sources{font-size:.85rem;color:var(--muted);margin-top:34px;border-top:1px solid var(--line);padding-top:16px}.sources a{color:var(--forest);text-decoration:underline}
+.related{display:grid;gap:12px;margin-top:12px}.related a{border:1px solid var(--line);border-radius:16px;padding:14px 18px;font-weight:700;color:var(--forest);background:#fff}.related a:hover{border-color:var(--gold)}
+.disc{font-size:.78rem;color:var(--muted);margin-top:22px}
