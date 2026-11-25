@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="hi-IN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>My Wellness Dashboard | ManthanBites</title>
+<meta name="description" content="ManthanBites par apni healthy habits aur 7-day challenge ki progress ek jagah dekhein.">
+<link rel="canonical" href="https://manthanbites.github.io/dashboard.html">
+<meta name="theme-color" content="#173f35"><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="engage.css"><link rel="stylesheet" href="dashboard.css">
+<meta property="og:type" content="website"><meta property="og:title" content="My Wellness Dashboard | ManthanBites"><meta property="og:description" content="Apni healthy habits aur challenge progress track karein.">
+</head>
+<body><a class="skip-link" href="#main">Skip to content</a>
+<header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="ManthanBites home"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="primary-nav" class="nav-links" aria-label="Main navigation"><a href="index.html#explore">Explore</a><a href="index.html#tools">Free tools</a><a href="articles.html">Guides</a><a href="habit-tracker.html">Habit Tracker</a><a class="nav-cta" href="7-day-healthy-habits-challenge.html">7-Day Challenge <span>↗</span></a></nav></div></header>
+<main id="main" class="tool-main dashboard-main">
+<p class="eyebrow">YOUR SMALL STEPS MATTER</p><h1>My Wellness Dashboard</h1><p class="sub">Apni habits aur 7-Day Challenge ki progress ek jagah dekhein. Yeh data isi browser mein saved hai.</p>
+<div class="dash-notice" role="status"><strong>Private by design:</strong> Dashboard aapke browser ke existing ManthanBites data ko read karta hai. Koi account, server sync ya naya tracking data collect nahi hota.</div>
+<section class="dash-stats" aria-label="Progress summary">
+<article class="dash-stat"><span>Active habits</span><strong id="stat-habits">—</strong><small>Habit Tracker mein</small></article>
+<article class="dash-stat"><span>Last 7 days</span><strong id="stat-rate">—</strong><small>Habit check-in completion</small></article>
+<article class="dash-stat"><span>Challenge</span><strong id="stat-challenge">—</strong><small>7 din mein se complete</small></article>
+<article class="dash-stat"><span>Today</span><strong id="stat-today">—</strong><small>Aaj ke habit check-ins</small></article>
+</section>
+
+<section class="card adv-controls" aria-label="Dashboard filters">
+ <div class="dash-heading"><div><p class="eyebrow">YOUR INSIGHTS</p><h2>Analytics period</h2></div><label class="period-control">Month <input id="month-picker" type="month"></label></div>
+ <p class="dash-footnote">Monthly aur weekly reports aapke isi browser mein saved Habit Tracker aur Challenge data se calculate hote hain.</p>
+</section>
+<section class="adv-grid">
+ <article class="card"><p class="eyebrow">MONTHLY ANALYTICS</p><h2 id="month-title">Is mahine ki progress</h2><div class="month-kpis"><div><strong id="month-rate">0%</strong><span>Completion rate</span></div><div><strong id="month-done">0</strong><span>Completed check-ins</span></div><div><strong id="month-best">—</strong><span>Best day</span></div></div><div id="monthly-chart" class="monthly-chart" role="img" aria-label="Monthly habit completion chart"></div></article>
+ <article class="card"><p class="eyebrow">PERSONAL GOALS</p><h2>Apne goals set karein</h2><form id="goal-form" class="goal-form"><label>Goal ka naam<input id="goal-name" maxlength="70" required placeholder="Jaise: Hafte mein 4 din walk"></label><label>Weekly target (days)<input id="goal-target" type="number" min="1" max="7" value="4" required></label><button class="button" type="submit">+ Goal add karein</button></form><div id="goal-list" class="goal-list"></div><p class="dash-footnote">Goals is browser mein alag key par save honge; purana tracker data nahi badlega.</p></article>
+</section>
+<section class="card"><div class="dash-heading"><div><p class="eyebrow">WEEKLY REPORT</p><h2>Is hafte ka summary</h2></div><span id="report-range" class="dash-period"></span></div><div class="report-grid"><div><strong id="report-checkins">0</strong><span>Completed check-ins</span></div><div><strong id="report-rate">0%</strong><span>Completion rate</span></div><div><strong id="report-best">—</strong><span>Best habit</span></div></div><p id="report-summary" class="dash-footnote"></p><div class="report-actions"><button class="button" id="download-report" type="button">Download weekly CSV</button><button class="button button-secondary" id="print-report" type="button">Print weekly report</button></div></section>
+
+<section class="card"><div class="dash-heading"><div><p class="eyebrow">WEEKLY OVERVIEW</p><h2>Rozana habit progress</h2></div><span class="dash-period" id="week-label">Last 7 days</span></div><div id="weekly-chart" class="weekly-chart" role="img" aria-label="Pichhle saat din ki habit completion chart"></div><p class="dash-footnote">Har bar us din complete ki gayi habits ka percentage dikhata hai. Agar us din koi habit configured nahi thi, to 0% dikhaya jayega.</p></section>
+<section class="card"><div class="dash-heading"><div><p class="eyebrow">YOUR ROUTINE</p><h2>Habit-wise progress</h2></div><a class="dash-link" href="habit-tracker.html">Tracker kholein ↗</a></div><div id="habit-breakdown" class="habit-breakdown"></div><p id="habit-empty" class="empty-state" hidden>Abhi Habit Tracker mein data nahi mila. Apni pehli habit add karke shuru karein.</p></section>
+<section class="card challenge-panel"><div><p class="eyebrow">7-DAY HEALTHY HABITS</p><h2>Challenge progress</h2><p id="challenge-message">Apna 7-Day Challenge shuru karein.</p><div class="bar"><i id="challenge-bar"></i></div><strong id="challenge-count">0 / 7 days</strong></div><a class="button" href="7-day-healthy-habits-challenge.html">Challenge dekhein <span>→</span></a></section>
+<section class="dash-actions"><a class="dash-action" href="habit-tracker.html"><strong>+ Habit Tracker</strong><span>Habits add aur update karein</span></a><a class="dash-action" href="7-day-healthy-habits-challenge.html"><strong>7-Day Challenge</strong><span>Daily activity complete karein</span></a></section>
+<p class="note">Note: Progress browser ke local storage par nirbhar hai. Browser data clear karne, private browsing use karne ya doosre device par jaane se data unavailable ho sakta hai. Dashboard medical assessment ya personalised health advice nahi hai.</p>
+</main>
+<footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><p>Simple nutrition knowledge for thoughtful everyday choices.</p></div><div class="footer-col"><h4>Explore</h4><a href="index.html#tools">Free tools</a><a href="articles.html">Guides</a></div><div class="footer-col"><h4>Track</h4><a href="habit-tracker.html">Habit Tracker</a><a href="7-day-healthy-habits-challenge.html">7-Day Challenge</a></div><div class="footer-col"><h4>Information</h4><a href="disclaimer.html">Health disclaimer</a><a href="privacy.html">Privacy policy</a></div></div><div class="container footer-bottom"><span>© 2026 ManthanBites. All rights reserved.</span><span>Learn with curiosity. Live with balance.</span></div><div class="container footer-disclaimer">Content on this website is for general educational purposes only. It is not a substitute for individual medical or dietetic advice.</div></footer>
+<script src="assets/js/dashboard.js" defer></script><script src="assets/js/main.js" defer></script></body></html>
