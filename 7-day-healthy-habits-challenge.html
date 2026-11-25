@@ -2,30 +2,11 @@
 <body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="ManthanBites home"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="primary-nav" class="nav-links" aria-label="Main navigation"><a href="index.html#explore">Explore</a><a href="index.html#tools">Free tools</a><a href="index.html#program">Free Program</a><a href="articles.html">Guides</a><a href="index.html#community">Community</a><a class="nav-cta" href="index.html#program">Free Program <span>→</span></a></nav></div></header>
 <main id="main" class="tool-main">
-<h1>Free 7-Day Healthy Habits Challenge</h1><p class="sub">Har din ek chhoti habit. Koi crash diet nahi, koi extreme rule nahi.</p>
-<div class="card"><div class="bar"><i id="pb"></i></div><p id="pt" style="margin:8px 0 0"></p></div><div id="days"></div>
+<h1>Free 7-Day Healthy Habits Challenge</h1><p class="sub">Har din ek chhoti habit. Koi crash diet nahi, koi extreme rule nahi. Ek din complete karein, phir agla din unlock hoga.</p>
+<div class="card"><div class="bar"><i id="pb"></i></div><p id="pt" style="margin:8px 0 0" aria-live="polite"></p><p class="note" id="challenge-next"></p></div><div id="days"></div>
 <p><button class="alt" id="rs">Challenge reset karein</button></p>
-<p class="note">Progress sirf is browser mein save hoti hai.</p><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
-<script>
-var C=[["Dheere chabakar khana","Aaj ke ek meal mein har niwale ko kam se kam 20 baar chabayein. Chamach beech mein rakhein."],
-["Paani ki aadat","Subah uthkar ek glass paani piyein aur din mein apni pyaas ke hisaab se paani peete rahein."],
-["Phone-free meal","Aaj ek meal phone aur TV ke bina khayein. Bas khane par dhyan dein."],
-["Plate ka balance","Plate ka aadha hissa sabzi ya fal, ek chauthai anaaj aur ek chauthai protein rakhein."],
-["10 minute walk","Khane ke baad 10 minute halka chalein. Tez nahi, bas aaram se."],
-["Bhookh aur fullness","Khane se pehle bhookh 1 se 10 par rate karein, aur beech mein rukkar fullness check karein."],
-["Neend aur reflection","Aaj raat samay par sone ki koshish karein. Pichhle 6 din mein sabse aasaan habit kaun si lagi, likh lein."]];
-var K='mb_challenge',s;try{s=JSON.parse(localStorage.getItem(K))}catch(e){}s=s||[];
-function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}
-function render(){var w=document.getElementById('days');w.textContent='';
-C.forEach(function(c,n){var d=document.createElement('div');d.className='card day'+(s[n]?' done':'');
-var a=document.createElement('div');a.className='tag';a.textContent='DAY '+(n+1);var h=document.createElement('h3');h.textContent=c[0];var p=document.createElement('p');p.textContent=c[1];
-var b=document.createElement('button');b.textContent=s[n]?'Ho gaya ✓':'Maine kar liya';if(!s[n])b.className='alt';b.onclick=function(){s[n]=!s[n];save();render()};
-d.appendChild(a);d.appendChild(h);d.appendChild(p);d.appendChild(b);w.appendChild(d)});
-var k=C.filter(function(_,n){return s[n]}).length;document.getElementById('pb').style.width=(k/7*100)+'%';
-document.getElementById('pt').textContent=k===7?'Badhai ho! Aapne 7 din poore kiye. Ab habit tracker mein inhe jodein.':k+' / 7 din poore'}
-document.getElementById('rs').onclick=function(){if(confirm('Saari progress hat jayegi. Pakka?')){s=[];save();render()}};
-render();
-</script></main>
+<p class="note">Progress sirf is browser mein save hoti hai. Agla din pichhla din complete karne ke baad unlock hota hai; pehle ke din dobara edit kiye ja sakte hain.</p><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
+<script src="assets/js/phase2-tools.js" defer></script></main>
 <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><p>Simple nutrition knowledge for thoughtful everyday choices.</p></div><div class="footer-col"><h4>Explore</h4><a href="articles.html">All guides</a><a href="index.html#tools">Free tools</a><a href="index.html#program">Free program</a></div><div class="footer-col"><h4>Trust</h4><a href="author.html">Author</a><a href="editorial-policy.html">Editorial policy</a><a href="references.html">References</a></div><div class="footer-col"><h4>Information</h4><a href="disclaimer.html">Health disclaimer</a><a href="privacy.html">Privacy policy</a></div></div><div class="container footer-bottom"><span>© 2026 ManthanBites. All rights reserved.</span><span>Learn with curiosity. Live with balance.</span></div><div class="container footer-disclaimer">Content on this website is for general educational purposes only. It is not a substitute for individual medical or dietetic advice.</div></footer>
 <a class="wa-float" href="https://wa.me/919286688044?text=Namaste%20Rajni%20ji%2C%20mujhe%20Manthan%20Bites%20Free%20Weekly%20Weight%20Management%20Program%20ki%20jaankari%20chahiye." target="_blank" rel="noopener" aria-label="WhatsApp par Free Program ke liye message karein"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.6-4.6A8.5 8.5 0 1 1 8 19.6L3 21z"/><path d="M9 9.5c.5 2.5 2.5 4.5 5 5l1.3-1.3-2-1-.8.8c-1-.4-1.8-1.2-2.2-2.2l.8-.8-1-2L9 9.5z"/></svg><span>WhatsApp</span></a>
 <script src="assets/js/main.js" defer></script></body></html>

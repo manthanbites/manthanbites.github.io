@@ -2,28 +2,10 @@
 <body><a class="skip-link" href="#main">Skip to content</a>
 <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="ManthanBites home"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="primary-nav" class="nav-links" aria-label="Main navigation"><a href="index.html#explore">Explore</a><a href="index.html#tools">Free tools</a><a href="index.html#latest">Articles</a><a href="index.html#approach">Our approach</a><a href="index.html#community">Community</a><a class="nav-cta" href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener">Subscribe <span>↗</span></a></nav></div></header>
 <main id="main" class="tool-main">
-<h1>Habit Tracker</h1><p class="sub">Pichhle 7 din ki habits ek nazar mein. Cell par tap karke tick karein.</p>
-<div class="card tw"><table id="t"></table></div>
-<div class="card"><label for="n">Nayi habit jodein</label><input id="n" maxlength="40" placeholder="e.g. Raat ko jaldi sona"><p><button id="add">Jodein</button> <button class="alt" id="rm">Aakhri habit hatayein</button></p></div>
+<h1>Habit Tracker</h1><p class="sub">Pichhle 7 din ki habits ek nazar mein. Cell par tap karke tick karein. Apni habits add ya delete karein aur progress export karein.</p>
+<div class="card"><div class="tool-summary" id="tracker-summary" aria-live="polite"></div></div><div class="card tw"><table id="t"></table></div>
+<div class="card"><label for="n">Nayi habit jodein</label><input id="n" maxlength="40" placeholder="e.g. Raat ko jaldi sona"><p><button id="add">Jodein</button> <button class="alt" id="export-tracker" type="button">CSV Export</button></p><p class="note">Har habit ke saamne diya gaya Delete button sirf us habit ko hatayega.</p></div>
 <p class="note">Aapka data sirf is browser mein save hota hai (aapke phone ya computer par), kisi server par nahi.</p><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
-<script>
-var K='mb_tracker',s;try{s=JSON.parse(localStorage.getItem(K))}catch(e){}
-s=s||{h:['Dheere chabakar khana','Paani (8 glass)','10 min walk','Phone-free meal'],l:{}};
-function save(){try{localStorage.setItem(K,JSON.stringify(s))}catch(e){}}
-function dk(d){return d.getFullYear()+'-'+String(d.getMonth()+1).padStart(2,'0')+'-'+String(d.getDate()).padStart(2,'0')}
-var D=[];for(var k=6;k>=0;k--){var d=new Date();d.setDate(d.getDate()-k);D.push(d)}
-function on(day,h){return (s.l[dk(day)]||[]).indexOf(h)>-1}
-function streak(h){var n=0,d=new Date();if(!on(d,h))d.setDate(d.getDate()-1);while(on(d,h)){n++;d.setDate(d.getDate()-1)}return n}
-function el(t,x,c){var e=document.createElement(t);if(x!=null)e.textContent=x;if(c)e.className=c;return e}
-function render(){var t=document.getElementById('t');t.textContent='';var r=el('tr');r.appendChild(el('th','Habit'));
-D.forEach(function(d){r.appendChild(el('th',['Ravi','Som','Mang','Budh','Guru','Shukr','Shani'][d.getDay()]))});r.appendChild(el('th','Streak'));t.appendChild(r);
-s.h.forEach(function(h){var tr=el('tr');tr.appendChild(el('td',h));
-D.forEach(function(d){var td=el('td'),b=el('button',on(d,h)?'✓':'','cell'+(on(d,h)?' on':''));b.setAttribute('aria-label',h);
-b.onclick=function(){var key=dk(d),a=s.l[key]||[],j=a.indexOf(h);j>-1?a.splice(j,1):a.push(h);s.l[key]=a;save();render()};td.appendChild(b);tr.appendChild(td)});
-tr.appendChild(el('td',streak(h)+' din'));t.appendChild(tr)})}
-document.getElementById('add').onclick=function(){var v=document.getElementById('n').value.trim();if(v&&s.h.indexOf(v)<0&&s.h.length<12){s.h.push(v);document.getElementById('n').value='';save();render()}};
-document.getElementById('rm').onclick=function(){if(s.h.length>1){s.h.pop();save();render()}};
-render();
-</script></main>
+<script src="assets/js/phase2-tools.js" defer></script></main>
 <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><p>Simple nutrition knowledge for thoughtful everyday choices.</p></div><div class="footer-col"><h4>Explore</h4><a href="index.html#explore">Wellness topics</a><a href="index.html#latest">Latest guides</a><a href="index.html#tools">Free tools</a></div><div class="footer-col"><h4>Connect</h4><a href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener">YouTube ↗</a></div><div class="footer-col"><h4>Information</h4><a href="disclaimer.html">Health disclaimer</a><a href="privacy.html">Privacy policy</a></div></div><div class="container footer-bottom"><span>© 2026 ManthanBites. All rights reserved.</span><span>Learn with curiosity. Live with balance.</span></div><div class="container footer-disclaimer">Content on this website is for general educational purposes only. It is not a substitute for individual medical or dietetic advice.</div></footer>
 <script src="assets/js/main.js" defer></script></body></html>

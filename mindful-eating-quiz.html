@@ -3,27 +3,7 @@
 <header class="site-header"><div class="container nav-wrap"><a class="brand" href="index.html" aria-label="ManthanBites home"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation"><span></span><span></span><span></span></button><nav id="primary-nav" class="nav-links" aria-label="Main navigation"><a href="index.html#explore">Explore</a><a href="index.html#tools">Free tools</a><a href="index.html#latest">Articles</a><a href="index.html#approach">Our approach</a><a href="index.html#community">Community</a><a class="nav-cta" href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener">Subscribe <span>↗</span></a></nav></div></header>
 <main id="main" class="tool-main">
 <h1>Mindful Eating Quiz</h1><p class="sub">8 chhote sawaal. Koi sahi ya galat jawab nahi, bas imaandari se chuniye.</p>
-<div class="card" id="q"></div><div class="card hide" id="res"></div><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
-<script>
-var Q=[["Khana khate waqt phone ya TV chalta hai?",["Aksar","Kabhi kabhi","Lagbhag kabhi nahi"]],
-["Khane ki speed kaisi hoti hai?",["Bahut tez","Medium","Dheere aur chabakar"]],
-["Khana shuru karne se pehle bhookh check karte hain?",["Nahi","Kabhi kabhi","Haan, aksar"]],
-["Pet bhar jaane par rukte hain?",["Plate khatam karni hoti hai","Kabhi kabhi","Haan, fullness sunte hain"]],
-["Stress ya boredom mein khana khate hain?",["Aksar","Kabhi kabhi","Bahut kam"]],
-["Khana khane se pehle uski khushboo aur swaad par dhyan dete hain?",["Nahi","Kabhi kabhi","Haan"]],
-["Din ke meals ka time kaisa rehta hai?",["Bilkul irregular","Thoda irregular","Kaafi regular"]],
-["Khane ke baad khud ko guilty feel karte hain?",["Aksar","Kabhi kabhi","Lagbhag nahi"]]];
-var i=0,s=0,q=document.getElementById('q');
-function show(){q.textContent='';var p=document.createElement('div');p.className='bar';p.innerHTML='<i style="width:'+(i/Q.length*100)+'%"></i>';q.appendChild(p);
-var h=document.createElement('h2');h.textContent=(i+1)+'/'+Q.length+'. '+Q[i][0];q.appendChild(h);
-Q[i][1].forEach(function(t,n){var b=document.createElement('button');b.className='opt';b.textContent=t;b.onclick=function(){s+=n;i++;i<Q.length?show():done()};q.appendChild(b)})}
-function done(){q.classList.add('hide');var r=document.getElementById('res'),t,m;
-if(s<=5){t='Shuruaat ka stage';m='Auto-pilot par khana abhi aam baat hai, aur yeh theek hai. Sirf ek aadat chuniye: khane ke dauraan phone door rakhna.'}
-else if(s<=11){t='Raste par hain';m='Aapki kai aadatein achhi hain. Dheere chabakar khana aur fullness sunna agla kadam ho sakta hai.'}
-else{t='Mindful eater';m='Shaandaar! Aap apne khane ke saath achha rishta rakhte hain. Isi ko banaye rakhein aur doosron ke saath share karein.'}
-r.innerHTML='<div class="big"></div><h2></h2><p></p><p><a class="button button-primary" href="7-day-healthy-habits-challenge.html">7-day challenge</a> <button class="alt" onclick="location.reload()">Dobara khelein</button></p>';
-r.children[0].textContent=s+' / 16';r.children[1].textContent=t;r.children[2].textContent=m;r.classList.remove('hide')}
-show();
-</script></main>
+<div class="card" id="q" aria-live="polite"></div><div class="card hide" id="res" aria-live="polite"></div><p class="note">Yeh tool sirf general educational jaankari ke liye hai, medical ya dietetic salah nahi. Health se jude faislon ke liye doctor ya registered dietitian se milein. <a href="disclaimer.html">Health disclaimer</a></p>
+<script src="assets/js/phase2-tools.js" defer></script></main>
 <footer class="site-footer"><div class="container footer-main"><div class="footer-brand"><a class="brand brand-footer" href="index.html"><span class="brand-mark">M</span><span>Manthan<span class="brand-accent">Bites</span><small>HEALTH • HABITS • HARMONY</small></span></a><p>Simple nutrition knowledge for thoughtful everyday choices.</p></div><div class="footer-col"><h4>Explore</h4><a href="index.html#explore">Wellness topics</a><a href="index.html#latest">Latest guides</a><a href="index.html#tools">Free tools</a></div><div class="footer-col"><h4>Connect</h4><a href="https://www.youtube.com/@manthanbites" target="_blank" rel="noopener">YouTube ↗</a></div><div class="footer-col"><h4>Information</h4><a href="disclaimer.html">Health disclaimer</a><a href="privacy.html">Privacy policy</a></div></div><div class="container footer-bottom"><span>© 2026 ManthanBites. All rights reserved.</span><span>Learn with curiosity. Live with balance.</span></div><div class="container footer-disclaimer">Content on this website is for general educational purposes only. It is not a substitute for individual medical or dietetic advice.</div></footer>
 <script src="assets/js/main.js" defer></script></body></html>

@@ -17,3 +17,14 @@
 .tw{overflow-x:auto}.tw table{border-collapse:collapse;width:100%;min-width:500px}.tw th,.tw td{padding:9px 6px;text-align:center;border-bottom:1px solid var(--line);font-size:.85rem}.tw td:first-child,.tw th:first-child{text-align:left}
 .day.done{border-color:var(--gold)}.day h3{margin:0 0 4px;font-size:1.15rem;color:var(--forest);letter-spacing:-.03em}.tag{font-size:.65rem;color:#b8793e;font-weight:800;letter-spacing:.14em}
 .hide{display:none!important}
+
+
+/* Phase 2 interaction improvements */
+.tool-actions{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
+.tool-main button:disabled{opacity:.45;cursor:not-allowed}
+.tool-main button.selected{outline:3px solid var(--gold);outline-offset:2px}
+.tool-main button.mini-delete{padding:7px 10px;border:1px solid #b84b43;background:#fff;color:#963b35;font-size:.75rem}
+.tool-summary{font-weight:700;color:var(--forest);line-height:1.6}
+.day button:disabled{opacity:.45;cursor:not-allowed}
+.tool-main button:focus-visible,.tool-main a:focus-visible,.tool-main input:focus-visible{outline:3px solid var(--gold);outline-offset:3px}
+@media(max-width:600px){.card{padding:18px}.tool-actions>*{flex:1 1 100%}.tw table{min-width:610px}}
