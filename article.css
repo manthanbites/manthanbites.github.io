@@ -1,13 +1,338 @@
-.article-main{width:min(760px,calc(100% - 36px));margin:0 auto;padding:48px 0 80px}
-.crumbs{font-size:.78rem;color:var(--muted);margin-bottom:14px}.crumbs a{color:var(--forest);font-weight:700}
-.article-main h1{font-size:clamp(2rem,5vw,3rem);line-height:1.12;letter-spacing:-.06em;color:var(--forest);margin:0 0 12px}
-.byline{color:var(--muted);font-size:.82rem;margin:0 0 28px}.byline a{color:var(--forest);text-decoration:underline}
-.article-main h2{font-size:1.5rem;color:var(--forest);letter-spacing:-.04em;margin:40px 0 10px;line-height:1.2}
-.article-main p,.article-main li{font-size:1.02rem;line-height:1.85;color:#33423a}
-.article-main ul,.article-main ol{padding-left:22px}.article-main li{margin:6px 0}
-.box{border-radius:20px;padding:20px 24px;margin:26px 0}.box h3{margin:0 0 6px;font-size:1rem;color:var(--forest)}.box p{margin:0}
-.box.tldr{background:var(--sage)}.box.habit{background:#f5ead8}.box.doctor{background:#fdf0ec;border:1px solid #f0d3ca}
-.cta-card{background:var(--forest);border-radius:24px;padding:30px;margin:44px 0 10px}.cta-card h3{color:#fff;margin:0 0 8px;font-size:1.3rem;letter-spacing:-.03em}.cta-card p{color:#d1ded5;margin:0 0 18px;font-size:.95rem}.cta-card .button{margin:0 10px 10px 0}
-.sources{font-size:.85rem;color:var(--muted);margin-top:34px;border-top:1px solid var(--line);padding-top:16px}.sources a{color:var(--forest);text-decoration:underline}
-.related{display:grid;gap:12px;margin-top:12px}.related a{border:1px solid var(--line);border-radius:16px;padding:14px 18px;font-weight:700;color:var(--forest);background:#fff}.related a:hover{border-color:var(--gold)}
-.disc{font-size:.78rem;color:var(--muted);margin-top:22px}
+
+<!DOCTYPE html>
+<html lang="hi-IN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>All Health & Nutrition Articles | ManthanBites</title>
+
+  <meta name="description" content="Explore all 12 ManthanBites guides on mindful eating, gut health, Indian nutrition, protein, hydration, food labels, sleep quality and healthy everyday habits in simple Hinglish.">
+
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://manthanbites.github.io/articles.html">
+
+  <meta property="og:title" content="All Health & Nutrition Articles | ManthanBites">
+  <meta property="og:description" content="Simple and practical guides on mindful eating, nutrition, gut health and healthy habits.">
+  <meta property="og:url" content="https://manthanbites.github.io/articles.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="ManthanBites">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="All Health & Nutrition Articles | ManthanBites">
+  <meta name="twitter:description" content="Explore practical health and nutrition guides in simple Hinglish.">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="article.css">
+
+  <style>
+    .articles-page {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: 40px 20px 60px;
+    }
+
+    .articles-intro {
+      text-align: center;
+      max-width: 760px;
+      margin: 0 auto 35px;
+    }
+
+    .articles-intro h1 {
+      margin-bottom: 12px;
+    }
+
+    .articles-intro p {
+      line-height: 1.7;
+    }
+
+    .article-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 24px;
+    }
+
+    .article-card {
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      border-radius: 16px;
+      background: var(--card-bg, #fff);
+      border: 1px solid rgba(0,0,0,0.08);
+      text-decoration: none;
+      color: inherit;
+      transition: transform .2s ease, box-shadow .2s ease;
+    }
+
+    .article-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.09);
+    }
+
+    .article-art {
+      min-height: 145px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 52px;
+      background: #edf5ef;
+    }
+
+    .art-balance { background: #eaf2ff; }
+    .art-bite { background: #fff2df; }
+    .art-water { background: #e6f5fa; }
+    .art-sleep { background: #eeeafa; }
+    .art-protein { background: #f8eee5; }
+    .art-label { background: #f0f2e8; }
+    .art-gut { background: #eaf4e8; }
+
+    .bite-illustration {
+      font-size: 54px;
+    }
+
+    .article-content {
+      padding: 20px;
+    }
+
+    .article-category {
+      display: inline-block;
+      margin-bottom: 10px;
+      font-size: 12px;
+      font-weight: 700;
+      color: #34704e;
+      text-transform: uppercase;
+      letter-spacing: .5px;
+    }
+
+    .article-content h2 {
+      font-size: 19px;
+      line-height: 1.4;
+      margin: 0 0 10px;
+    }
+
+    .article-content p {
+      font-size: 14px;
+      line-height: 1.65;
+      margin: 0;
+      opacity: .85;
+    }
+
+    .article-read {
+      display: inline-block;
+      margin-top: 16px;
+      font-weight: 700;
+      color: #286343;
+      font-size: 14px;
+    }
+
+    .articles-back {
+      text-align: center;
+      margin-top: 35px;
+    }
+
+    .articles-back a {
+      font-weight: 700;
+      color: #286343;
+    }
+
+    @media (max-width: 600px) {
+      .articles-page {
+        padding: 28px 15px 45px;
+      }
+
+      .article-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "All Health & Nutrition Articles",
+    "description": "Health, nutrition, mindful eating and healthy lifestyle guides by ManthanBites.",
+    "url": "https://manthanbites.github.io/articles.html",
+    "isPartOf": {
+      "@type": "WebSite",
+      "name": "ManthanBites",
+      "url": "https://manthanbites.github.io/"
+    }
+  }
+  </script>
+</head>
+
+<body>
+
+  <main class="articles-page">
+
+    <section class="articles-intro">
+      <h1>Health & Nutrition Guides</h1>
+      <p>
+        Welcome to ManthanBites. Yahan aapko mindful eating,
+        gut health, Indian nutrition aur healthy lifestyle se jude
+        practical guides simple Hinglish mein milenge.
+      </p>
+      <p>
+        Har article ka purpose hai aapko food aur health ke
+        decisions ko behtar samajhne mein madad karna.
+      </p>
+    </section>
+
+    <section class="article-grid" aria-label="All health and nutrition articles">
+
+      <a class="article-card" href="dheere-chabakar-khane-ki-aadat.html">
+        <div class="article-art art-bite">
+          <span class="bite-illustration">🍎</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Mindful Eating</span>
+          <h2>Dheere Chabakar Khane Ki Aadat Kyun Zaroori Hai?</h2>
+          <p>Slow eating, mindful eating aur food ko achhe se chew karne ke practical benefits samjhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="paani-peene-ka-sahi-tarika.html">
+        <div class="article-art art-water">
+          <span class="bite-illustration">💧</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Hydration</span>
+          <h2>Paani Peene Ka Sahi Tarika Kya Hai?</h2>
+          <p>Daily hydration, thirst signals aur paani peene ki healthy habits ke baare mein jaaniye.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="bina-stress-ke-weight-balance.html">
+        <div class="article-art art-balance">
+          <span class="bite-illustration">⚖️</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Healthy Weight</span>
+          <h2>Bina Stress Ke Weight Balance Kaise Karein?</h2>
+          <p>Crash dieting ke bajay sustainable habits aur balanced food choices ko samjhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="khane-ke-baad-bloating-kyun-hoti-hai.html">
+        <div class="article-art art-gut">
+          <span class="bite-illustration">🌿</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Gut Health</span>
+          <h2>Khane Ke Baad Bloating Kyun Hoti Hai?</h2>
+          <p>Pet phoolne ke common reasons, eating habits aur digestion-friendly suggestions jaaniye.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="raat-ko-late-khana-sahi-ya-galat.html">
+        <div class="article-art art-sleep">
+          <span class="bite-illustration">🌙</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Meal Timing</span>
+          <h2>Raat Ko Late Khana Sahi Hai Ya Galat?</h2>
+          <p>Late-night meals, sleep aur daily eating routine ke beech connection samjhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="mithe-ki-craving-kyun-hoti-hai.html">
+        <div class="article-art art-bite">
+          <span class="bite-illustration">🍫</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Food Habits</span>
+          <h2>Meethe Ki Craving Kyun Hoti Hai?</h2>
+          <p>Sweet cravings ke possible reasons aur balanced eating habits ke practical tips.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="office-tiffin-mein-kya-rakhein.html">
+        <div class="article-art art-balance">
+          <span class="bite-illustration">🥗</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Everyday Nutrition</span>
+          <h2>Office Tiffin Mein Kya Rakhein?</h2>
+          <p>Balanced office lunch ke liye protein, fibre aur variety wale food ideas.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="chai-ke-saath-kya-dhyan-rakhein.html">
+        <div class="article-art art-water">
+          <span class="bite-illustration">☕</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Daily Food Habits</span>
+          <h2>Chai Ke Saath Kya Dhyan Rakhein?</h2>
+          <p>Tea timing, snacks aur daily chai habits ko balance karne ke useful suggestions.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="packaged-food-label-kaise-padhein.html">
+        <div class="article-art art-label">
+          <span class="bite-illustration">🏷️</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Food Awareness</span>
+          <h2>Packaged Food Label Kaise Padhein?</h2>
+          <p>Ingredients list, serving size, sugar, sodium aur nutrition facts ko samajhna seekhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="indian-diet-protein-gap.html">
+        <div class="article-art art-protein">
+          <span class="bite-illustration">🥜</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Balanced Nutrition</span>
+          <h2>Indian Diet Mein Protein Kaise Badhayein?</h2>
+          <p>Dal, beans, dairy, soy aur everyday Indian foods se protein intake ko samjhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="meal-timing-gut-health-body-clock.html">
+        <div class="article-art art-gut">
+          <span class="bite-illustration">🕒</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Gut & Digestion</span>
+          <h2>Meal Timing, Gut Health Aur Body Clock</h2>
+          <p>Meal timing, daily routine aur body clock ke beech possible connection samjhein.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+      <a class="article-card" href="diet-and-sleep-quality.html">
+        <div class="article-art art-sleep">
+          <span class="bite-illustration">😴</span>
+        </div>
+        <div class="article-content">
+          <span class="article-category">Sleep & Nutrition</span>
+          <h2>Diet Aur Sleep Quality Ka Kya Connection Hai?</h2>
+          <p>Food choices, meal timing aur sleep-friendly daily habits ke baare mein jaaniye.</p>
+          <span class="article-read">Read Article →</span>
+        </div>
+      </a>
+
+    </section>
+
+    <div class="articles-back">
+      <a href="index.html">← Back to ManthanBites Home</a>
+    </div>
+
+  </main>
+
+</body>
+</html>
