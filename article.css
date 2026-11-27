@@ -486,3 +486,31 @@
   flex-shrink: 0;
   display: inline-block;
 }
+
+
+/* FIX: SOCIAL SHARE SVG ICON VISIBILITY */
+
+.article-share .share-btn {
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  gap: 8px !important;
+}
+
+.article-share .share-btn svg {
+  display: block !important;
+  width: 22px !important;
+  height: 22px !important;
+  min-width: 22px !important;
+  flex-shrink: 0 !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  overflow: visible !important;
+}
+
+.article-share .share-btn svg path,
+.article-share .share-btn svg circle,
+.article-share .share-btn svg rect {
+  visibility: visible !important;
+  opacity: 1 !important;
+}
