@@ -1,3 +1,374 @@
+
+/* =========================================
+   MANTHANBITES — ARTICLE STYLESHEET
+   Compatible with assets/css/style.css
+   Responsive | Accessible | Reader Friendly
+========================================= */
+
+/* ARTICLE CONTAINER */
+
+.article-main {
+  width: min(760px, calc(100% - 36px));
+  margin: 0 auto;
+  padding: clamp(30px, 6vw, 48px) 0 80px;
+  overflow-wrap: break-word;
+  scroll-margin-top: 100px;
+}
+
+/* BREADCRUMBS */
+
+.crumbs {
+  font-size: .82rem;
+  color: var(--muted);
+  margin: 0 0 16px;
+  line-height: 1.7;
+}
+
+.crumbs a {
+  color: var(--forest);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.crumbs a:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ARTICLE TITLE */
+
+.article-main h1 {
+  font-size: clamp(2rem, 5vw, 3rem);
+  line-height: 1.15;
+  letter-spacing: -.045em;
+  color: var(--forest);
+  margin: 0 0 14px;
+  font-weight: 800;
+  text-wrap: balance;
+}
+
+/* AUTHOR AND READING TIME */
+
+.byline {
+  color: var(--muted);
+  font-size: .85rem;
+  line-height: 1.8;
+  margin: 0 0 30px;
+}
+
+.byline a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ARTICLE HEADINGS */
+
+.article-main h2 {
+  font-size: clamp(1.4rem, 3vw, 1.65rem);
+  color: var(--forest);
+  letter-spacing: -.035em;
+  margin: 42px 0 13px;
+  line-height: 1.3;
+  text-wrap: balance;
+}
+
+.article-main h3 {
+  font-size: 1.15rem;
+  color: var(--forest);
+  line-height: 1.4;
+  margin: 28px 0 10px;
+  text-wrap: balance;
+}
+
+/* ARTICLE TEXT */
+
+.article-main p,
+.article-main li {
+  font-size: 1.02rem;
+  line-height: 1.85;
+  color: #33423a;
+}
+
+.article-main p {
+  margin: 0 0 18px;
+}
+
+.article-main ul,
+.article-main ol {
+  padding-left: 24px;
+  margin: 12px 0 24px;
+}
+
+.article-main li {
+  margin: 8px 0;
+  padding-left: 2px;
+}
+
+.article-main li::marker {
+  color: var(--forest-2);
+}
+
+.article-main strong {
+  color: #203b30;
+  font-weight: 700;
+}
+
+/* ARTICLE LINKS */
+
+.article-main a {
+  color: var(--forest);
+  text-decoration: underline;
+  text-decoration-color: #b9cbbd;
+  text-underline-offset: 3px;
+}
+
+.article-main a:hover {
+  color: #8a5f2e;
+  text-decoration-color: var(--gold);
+}
+
+/* INFORMATION BOXES */
+
+.article-main .box {
+  border-radius: 20px;
+  padding: 22px 24px;
+  margin: 28px 0;
+  border: 1px solid transparent;
+}
+
+.article-main .box h3 {
+  margin: 0 0 10px;
+  font-size: 1.05rem;
+  color: var(--forest);
+}
+
+.article-main .box p:last-child {
+  margin-bottom: 0;
+}
+
+.article-main .box ul,
+.article-main .box ol {
+  margin-bottom: 16px;
+}
+
+.article-main .box.tldr {
+  background: var(--sage);
+}
+
+.article-main .box.habit {
+  background: #f5ead8;
+  border-color: #ead9bd;
+}
+
+.article-main .box.doctor {
+  background: #fdf0ec;
+  border-color: #f0d3ca;
+}
+
+/* CTA CARD */
+
+.article-main .cta-card {
+  background: var(--forest);
+  border-radius: 24px;
+  padding: clamp(22px, 5vw, 32px);
+  margin: 46px 0 12px;
+}
+
+.article-main .cta-card h3 {
+  color: #fff;
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  letter-spacing: -.03em;
+  line-height: 1.35;
+}
+
+.article-main .cta-card p {
+  color: #d1ded5;
+  margin: 0 0 18px;
+  font-size: .96rem;
+  line-height: 1.75;
+}
+
+.article-main .cta-card a:not(.button) {
+  color: #fff;
+  text-decoration-color: #a9c2b1;
+}
+
+.article-main .cta-card .button {
+  display: inline-flex;
+  margin: 4px 10px 10px 0;
+  text-decoration: none;
+}
+
+/* ARTICLE IMAGES */
+
+.article-main img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  border-radius: 16px;
+  margin: 24px auto;
+}
+
+.article-main figure {
+  margin: 28px 0;
+}
+
+.article-main figcaption {
+  color: var(--muted);
+  font-size: .82rem;
+  line-height: 1.6;
+  text-align: center;
+  margin-top: 8px;
+}
+
+/* TABLES */
+
+.article-main table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 24px 0;
+  font-size: .92rem;
+}
+
+.article-main th,
+.article-main td {
+  border: 1px solid var(--line);
+  padding: 12px;
+  text-align: left;
+  line-height: 1.6;
+}
+
+.article-main th {
+  background: var(--sage);
+  color: var(--forest);
+  font-weight: 700;
+}
+
+/* RESEARCH REFERENCES */
+
+.article-main .sources {
+  font-size: .86rem;
+  color: var(--muted);
+  margin-top: 34px;
+  border-top: 1px solid var(--line);
+  padding-top: 18px;
+  line-height: 1.8;
+}
+
+.article-main ol li a {
+  font-size: .95em;
+}
+
+/* RELATED ARTICLES */
+
+.article-main .related {
+  display: grid;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.article-main .related a {
+  display: block;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 15px 18px;
+  font-weight: 700;
+  color: var(--forest);
+  background: #fff;
+  text-decoration: none;
+  transition: border-color .2s ease,
+              transform .2s ease,
+              box-shadow .2s ease;
+}
+
+.article-main .related a:hover {
+  border-color: var(--gold);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+/* HEALTH DISCLAIMER */
+
+.article-main .disc {
+  font-size: .8rem;
+  color: var(--muted);
+  margin-top: 24px;
+  line-height: 1.8;
+  padding-top: 16px;
+  border-top: 1px solid var(--line);
+}
+
+/* KEYBOARD ACCESSIBILITY */
+
+.article-main a:focus-visible {
+  outline: 3px solid var(--gold);
+  outline-offset: 4px;
+  border-radius: 4px;
+}
+
+/* MOBILE RESPONSIVE */
+
+@media (max-width: 600px) {
+
+  .article-main {
+    width: calc(100% - 32px);
+    padding-top: 30px;
+    padding-bottom: 56px;
+  }
+
+  .article-main p,
+  .article-main li {
+    font-size: 1rem;
+    line-height: 1.8;
+  }
+
+  .article-main h2 {
+    margin-top: 34px;
+  }
+
+  .article-main .box {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .article-main .cta-card {
+    padding: 22px 18px;
+    border-radius: 18px;
+  }
+
+  .article-main .cta-card .button {
+    margin-right: 5px;
+  }
+
+  .article-main table {
+    font-size: .84rem;
+  }
+
+  .article-main th,
+  .article-main td {
+    padding: 9px;
+  }
+
+  .article-main .related a {
+    padding: 14px 16px;
+  }
+}
+
+/* REDUCED MOTION */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .article-main .related a {
+    transition: none;
+  }
+
+  .article-main .related a:hover {
+    transform: none;
+  }
+}
+
 /* =========================================
    MAN THAN BITES - ARTICLE SOCIAL SHARING
 ========================================= */
