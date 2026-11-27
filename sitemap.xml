@@ -1,21 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://manthanbites.github.io/</loc></url>
-  <url><loc>https://manthanbites.github.io/dheere-chabakar-khane-ki-aadat.html</loc></url>
-  <url><loc>https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html</loc></url>
-  <url><loc>https://manthanbites.github.io/bina-stress-ke-weight-balance.html</loc></url>
-  <url><loc>https://manthanbites.github.io/articles.html</loc></url>
-  <url><loc>https://manthanbites.github.io/khane-ke-baad-bloating-kyun-hoti-hai.html</loc></url>
-  <url><loc>https://manthanbites.github.io/raat-ko-late-khana-sahi-ya-galat.html</loc></url>
-  <url><loc>https://manthanbites.github.io/mithe-ki-craving-kyun-hoti-hai.html</loc></url>
-  <url><loc>https://manthanbites.github.io/office-tiffin-mein-kya-rakhein.html</loc></url>
-  <url><loc>https://manthanbites.github.io/chai-ke-saath-kya-dhyan-rakhein.html</loc></url>
-  <url><loc>https://manthanbites.github.io/bmi-calculator.html</loc></url>
-  <url><loc>https://manthanbites.github.io/mindful-eating-quiz.html</loc></url>
-  <url><loc>https://manthanbites.github.io/habit-tracker.html</loc></url>
-  <url><loc>https://manthanbites.github.io/7-day-healthy-habits-challenge.html</loc></url>
-  <url><loc>https://manthanbites.github.io/author.html</loc></url>
-  <url><loc>https://manthanbites.github.io/editorial-policy.html</loc></url>
-  <url><loc>https://manthanbites.github.io/references.html</loc></url>
-  <url><loc>https://manthanbites.github.io/disclaimer.html</loc></url>
-  <url><loc>https://manthanbites.github.io/privacy.html</loc></url>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://manthanbites.github.io/</loc>
+  </url>
+
+  <!-- All Articles Page -->
+  <url>
+    <loc>https://manthanbites.github.io/articles.html</loc>
+  </url>
+
+  <!-- Health & Nutrition Articles -->
+  <url>
+    <loc>https://manthanbites.github.io/dheere-chabakar-khane-ki-aadat.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/paani-peene-ka-sahi-tarika.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/bina-stress-ke-weight-balance.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/khane-ke-baad-bloating-kyun-hoti-hai.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/raat-ko-late-khana-sahi-ya-galat.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/mithe-ki-craving-kyun-hoti-hai.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/office-tiffin-mein-kya-rakhein.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/chai-ke-saath-kya-dhyan-rakhein.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/packaged-food-label-kaise-padhein.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/indian-diet-protein-gap.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/meal-timing-gut-health-body-clock.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/diet-and-sleep-quality.html</loc>
+  </url>
+
+  <!-- Health & Wellness Tools -->
+  <url>
+    <loc>https://manthanbites.github.io/bmi-calculator.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/mindful-eating-quiz.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/habit-tracker.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/7-day-healthy-habits-challenge.html</loc>
+  </url>
+
+  <!-- Website Information & Trust Pages -->
+  <url>
+    <loc>https://manthanbites.github.io/author.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/editorial-policy.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/references.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/disclaimer.html</loc>
+  </url>
+
+  <url>
+    <loc>https://manthanbites.github.io/privacy.html</loc>
+  </url>
+
 </urlset>
